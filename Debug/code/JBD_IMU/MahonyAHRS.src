@@ -1,0 +1,5104 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc39756a --dep-file=MahonyAHRS.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\ADS\\\\26_V0.0_Bike_KModel -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\code -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\code\\\\JBD_Camera -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\code\\\\JBD_IMU -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\code\\\\JBD_Map -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\code\\\\JBD_OLEDkeyboard -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\General -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Time -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Lin -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Spi -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Icu -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\PwmBc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\PwmHl -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\TPwm -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\TimerWithTrigger -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cif -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cif\\\\Cam -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cif\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Trap -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dsadc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dsadc\\\\Dsadc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dsadc\\\\Rdc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dsadc\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dts -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dts\\\\Dts -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dts\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Emem -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Emem\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Eray -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Eray\\\\Eray -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Eray\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Eth -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Eth\\\\Phy_Pef7071 -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Eth\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Fce -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Fce\\\\Crc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Fce\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Fft -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Fft\\\\Fft -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Fft\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\PwmHl -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Timer -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Tim -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Tim\\\\In -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Tom -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Tom\\\\Pwm -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Trig -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Hssl -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Hssl\\\\Hssl -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Hssl\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\I2c -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\I2c\\\\I2c -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\I2c\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Iom -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Iom\\\\Driver -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Iom\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Msc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Msc\\\\Msc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Msc\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Multican -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Multican\\\\Can -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Multican\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Io -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Psi5 -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Psi5\\\\Psi5 -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Psi5\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Psi5s -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Psi5s\\\\Psi5s -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Psi5s\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiSlave -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Sent -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Sent\\\\Sent -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Sent\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Smu -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Smu\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Timer -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\InternalMux -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\zf_common -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\zf_components -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\zf_device -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\libraries\\\\zf_driver -ID:\\\\ADS\\\\26_V0.0_Bike_KModel\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/JBD_IMU/MahonyAHRS.src ../code/JBD_IMU/MahonyAHRS.c"
+	.compiler_name		"ctc"
+	;source	'../code/JBD_IMU/MahonyAHRS.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.MahonyAHRS.AHRS_init',code,cluster('AHRS_init')
+	.sect	'.text.MahonyAHRS.AHRS_init'
+	.align	2
+	
+	.global	AHRS_init
+; Function AHRS_init
+.L23:
+AHRS_init:	.type	func
+	movh	d15,#16256
+.L445:
+	st.w	[a4],d15
+.L446:
+	mov	d15,#0
+.L447:
+	st.w	[a4]4,d15
+.L448:
+	mov	d15,#0
+.L449:
+	st.w	[a4]8,d15
+.L450:
+	mov	d15,#0
+.L451:
+	st.w	[a4]12,d15
+.L452:
+	ret
+.L106:
+	
+__AHRS_init_function_end:
+	.size	AHRS_init,__AHRS_init_function_end-AHRS_init
+.L46:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.AHRS_update',code,cluster('AHRS_update')
+	.sect	'.text.MahonyAHRS.AHRS_update'
+	.align	2
+	
+	.global	AHRS_update
+; Function AHRS_update
+.L25:
+AHRS_update:	.type	func
+	sub.a	a10,#24
+.L219:
+	mov	d15,#0
+.L457:
+	st.w	[a7],d15
+.L458:
+	mov	d15,#0
+.L459:
+	st.w	[a7]4,d15
+.L460:
+	mov	d15,#0
+.L461:
+	st.w	[a7]8,d15
+.L462:
+	ld.w	d15,[a6]4
+	st.w	[a10],d15
+.L463:
+	ld.w	d15,[a6]8
+	st.w	[a10]4,d15
+.L464:
+	ld.w	d15,[a7]
+	st.w	[a10]8,d15
+.L465:
+	ld.w	d15,[a7]4
+	st.w	[a10]12,d15
+.L466:
+	mov	d15,#0
+	st.w	[a10]16,d15
+.L467:
+	ld.w	d4,[a5]
+.L221:
+	ld.w	d5,[a5]4
+.L468:
+	ld.w	d6,[a5]8
+.L469:
+	ld.w	d7,[a6]
+	call	MahonyAHRSupdate
+.L220:
+	ret
+.L111:
+	
+__AHRS_update_function_end:
+	.size	AHRS_update,__AHRS_update_function_end-AHRS_update
+.L51:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.get_angle',code,cluster('get_angle')
+	.sect	'.text.MahonyAHRS.get_angle'
+	.align	2
+	
+	.global	get_angle
+; Function get_angle
+.L27:
+get_angle:	.type	func
+	mov.aa	a15,a4
+.L223:
+	mov.aa	a12,a5
+.L224:
+	mov.aa	a13,a6
+.L225:
+	mov.aa	a14,a7
+.L226:
+	ld.w	d0,[a15]
+.L474:
+	ld.w	d1,[a15]12
+.L475:
+	ld.w	d2,[a15]4
+.L476:
+	ld.w	d15,[a15]8
+.L477:
+	mul.f	d15,d2,d15
+.L478:
+	madd.f	d15,d15,d0,d1
+.L479:
+	movh	d0,#16384
+.L480:
+	mul.f	d4,d15,d0
+.L481:
+	ld.w	d0,[a15]
+.L482:
+	ld.w	d1,[a15]
+.L483:
+	ld.w	d15,[a15]4
+.L484:
+	ld.w	d2,[a15]4
+.L485:
+	mul.f	d15,d15,d2
+.L486:
+	madd.f	d0,d15,d0,d1
+.L487:
+	ld.w	d15,[a15]8
+.L488:
+	ld.w	d1,[a15]8
+.L489:
+	msub.f	d0,d0,d15,d1
+.L490:
+	ld.w	d15,[a15]12
+.L491:
+	ld.w	d1,[a15]12
+.L492:
+	msub.f	d5,d0,d15,d1
+	call	atan2
+.L222:
+	st.w	[a12],d2
+.L493:
+	ld.w	d0,[a15]8
+.L494:
+	ld.w	d1,[a15]12
+.L495:
+	ld.w	d2,[a15]
+.L496:
+	ld.w	d15,[a15]4
+.L497:
+	mul.f	d15,d2,d15
+.L498:
+	madd.f	d15,d15,d0,d1
+.L499:
+	movh	d0,#16384
+.L500:
+	mul.f	d4,d15,d0
+	call	asinf
+.L501:
+	st.w	[a13],d2
+.L502:
+	ld.w	d0,[a15]
+.L503:
+	ld.w	d15,[a15]8
+.L504:
+	mul.f	d0,d0,d15
+.L505:
+	ld.w	d15,[a15]4
+.L506:
+	ld.w	d1,[a15]12
+.L507:
+	msub.f	d15,d0,d15,d1
+.L508:
+	movh	d0,#16384
+.L509:
+	mul.f	d4,d15,d0
+.L510:
+	movh	d0,#16256
+.L511:
+	ld.w	d1,[a15]4
+.L512:
+	ld.w	d2,[a15]4
+.L513:
+	ld.w	d3,[a15]8
+.L514:
+	ld.w	d15,[a15]8
+.L515:
+	mul.f	d15,d3,d15
+.L516:
+	madd.f	d15,d15,d1,d2
+.L517:
+	movh	d1,#16384
+.L518:
+	msub.f	d5,d0,d15,d1
+	call	atan2f
+.L519:
+	st.w	[a14],d2
+.L520:
+	ret
+.L118:
+	
+__get_angle_function_end:
+	.size	get_angle,__get_angle_function_end-get_angle
+.L56:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.get_angle_e',code,cluster('get_angle_e')
+	.sect	'.text.MahonyAHRS.get_angle_e'
+	.align	2
+	
+	.global	get_angle_e
+; Function get_angle_e
+.L29:
+get_angle_e:	.type	func
+	mov.aa	a15,a4
+.L228:
+	mov.aa	a12,a5
+.L229:
+	mov.aa	a13,a6
+.L230:
+	mov.aa	a14,a7
+.L231:
+	ld.w	d0,[a15]
+.L682:
+	ld.w	d15,[a15]12
+.L683:
+	mul.f	d0,d0,d15
+.L684:
+	ld.w	d15,[a15]4
+.L685:
+	ld.w	d1,[a15]8
+.L686:
+	msub.f	d15,d0,d15,d1
+.L687:
+	movh	d0,#16384
+.L688:
+	mul.f	d4,d15,d0
+.L689:
+	ld.w	d15,[a15]4
+.L690:
+	insn.t	d0,d15:31,d15:31
+.L691:
+	ld.w	d1,[a15]4
+.L692:
+	ld.w	d2,[a15]12
+.L693:
+	ld.w	d15,[a15]12
+.L694:
+	mul.f	d15,d2,d15
+.L695:
+	madd.f	d15,d15,d0,d1
+.L696:
+	movh	d0,#16384
+.L697:
+	movh	d1,#16256
+.L698:
+	madd.f	d5,d1,d15,d0
+	call	atan2f
+.L227:
+	st.w	[a12],d2
+.L699:
+	ld.w	d0,[a15]8
+.L700:
+	ld.w	d1,[a15]12
+.L701:
+	ld.w	d2,[a15]
+.L702:
+	ld.w	d15,[a15]4
+.L703:
+	mul.f	d15,d2,d15
+.L704:
+	madd.f	d15,d15,d0,d1
+.L705:
+	movh	d0,#16384
+.L706:
+	mul.f	d4,d15,d0
+	call	asinf
+.L707:
+	st.w	[a13],d2
+.L708:
+	ld.w	d0,[a15]
+.L709:
+	ld.w	d15,[a15]8
+.L710:
+	mul.f	d0,d0,d15
+.L711:
+	ld.w	d15,[a15]4
+.L712:
+	ld.w	d1,[a15]12
+.L713:
+	msub.f	d15,d0,d15,d1
+.L714:
+	movh	d0,#16384
+.L715:
+	mul.f	d4,d15,d0
+.L716:
+	movh	d0,#16256
+.L717:
+	ld.w	d1,[a15]4
+.L718:
+	ld.w	d2,[a15]4
+.L719:
+	ld.w	d3,[a15]8
+.L720:
+	ld.w	d15,[a15]8
+.L721:
+	mul.f	d15,d3,d15
+.L722:
+	madd.f	d15,d15,d1,d2
+.L723:
+	movh	d1,#16384
+.L724:
+	msub.f	d5,d0,d15,d1
+	call	atan2f
+.L725:
+	st.w	[a14],d2
+.L726:
+	ret
+.L161:
+	
+__get_angle_e_function_end:
+	.size	get_angle_e,__get_angle_e_function_end-get_angle_e
+.L66:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.MahonyAHRSupdate',code,cluster('MahonyAHRSupdate')
+	.sect	'.text.MahonyAHRS.MahonyAHRSupdate'
+	.align	2
+	
+	.global	MahonyAHRSupdate
+; Function MahonyAHRSupdate
+.L31:
+MahonyAHRSupdate:	.type	func
+	sub.a	a10,#40
+.L232:
+	mov.aa	a15,a4
+.L234:
+	st.w	[a10]16,d4
+.L235:
+	st.w	[a10]20,d5
+.L236:
+	st.w	[a10]24,d6
+.L237:
+	mov	d8,d7
+.L238:
+	ld.w	d9,[a10]40
+.L240:
+	ld.w	d10,[a10]44
+.L242:
+	ld.w	d11,[a10]48
+.L244:
+	ld.w	d12,[a10]52
+.L246:
+	ld.w	d13,[a10]56
+.L248:
+	extr.u	d0,d11,#23,#8
+	eq	d15,d0,#0
+.L525:
+	jeq	d15,#0,.L2
+.L526:
+	extr.u	d15,d12,#23,#8
+	eq	d15,d15,#0
+	jeq	d15,#0,.L3
+.L527:
+	extr.u	d15,d13,#23,#8
+	eq	d15,d15,#0
+	jeq	d15,#0,.L4
+.L528:
+	st.w	[a10],d9
+.L529:
+	st.w	[a10]4,d10
+.L530:
+	mov.aa	a4,a15
+	mov	d7,d8
+	call	MahonyAHRSupdateIMU
+.L233:
+	j	.L5
+.L4:
+.L3:
+.L2:
+	extr.u	d15,d8,#23,#8
+	eq	d15,d15,#0
+.L531:
+	jeq	d15,#0,.L6
+.L532:
+	extr.u	d15,d9,#23,#8
+	eq	d15,d15,#0
+	jeq	d15,#0,.L7
+.L533:
+	extr.u	d15,d10,#23,#8
+	jeq	d15,#0,.L8
+.L7:
+.L6:
+	mul.f	d15,d9,d9
+.L534:
+	madd.f	d15,d15,d8,d8
+.L535:
+	madd.f	d4,d15,d10,d10
+.L251:
+	call	invSqrt
+.L250:
+	mul.f	d15,d8,d2
+.L239:
+	st.w	[a10]28,d15
+.L253:
+	mul.f	d15,d9,d2
+.L241:
+	st.w	[a10]40,d15
+.L536:
+	mul.f	d15,d10,d2
+.L243:
+	st.w	[a10]44,d15
+.L537:
+	mul.f	d15,d12,d12
+.L254:
+	madd.f	d15,d15,d11,d11
+.L538:
+	madd.f	d4,d15,d13,d13
+	call	invSqrt
+.L539:
+	mul.f	d15,d11,d2
+.L245:
+	st.w	[a10]48,d15
+.L540:
+	mul.f	d15,d12,d2
+.L247:
+	st.w	[a10]52,d15
+.L541:
+	mul.f	d15,d13,d2
+.L249:
+	st.w	[a10]56,d15
+.L542:
+	ld.w	d15,[a15]
+.L255:
+	ld.w	d0,[a15]
+.L543:
+	mul.f	d15,d15,d0
+.L256:
+	st.w	[a10]12,d15
+.L258:
+	ld.w	d0,[a15]
+.L544:
+	ld.w	d15,[a15]4
+.L257:
+	mul.f	d8,d0,d15
+.L259:
+	ld.w	d0,[a15]
+.L545:
+	ld.w	d15,[a15]8
+.L546:
+	mul.f	d9,d0,d15
+.L261:
+	ld.w	d0,[a15]
+.L547:
+	ld.w	d15,[a15]12
+.L548:
+	mul.f	d10,d0,d15
+.L262:
+	ld.w	d15,[a15]4
+.L549:
+	ld.w	d0,[a15]4
+.L550:
+	mul.f	d15,d15,d0
+.L263:
+	st.w	[a10]8,d15
+.L265:
+	ld.w	d15,[a15]4
+.L264:
+	ld.w	d0,[a15]8
+.L551:
+	mul.f	d11,d15,d0
+.L266:
+	ld.w	d15,[a15]4
+.L552:
+	ld.w	d0,[a15]12
+.L553:
+	mul.f	d12,d15,d0
+.L267:
+	ld.w	d15,[a15]8
+.L554:
+	ld.w	d0,[a15]8
+.L555:
+	mul.f	d13,d15,d0
+.L268:
+	ld.w	d15,[a15]8
+.L556:
+	ld.w	d0,[a15]12
+.L557:
+	mul.f	d14,d15,d0
+.L269:
+	ld.w	d15,[a15]12
+.L558:
+	ld.w	d0,[a15]12
+.L559:
+	mul.f	d15,d15,d0
+.L270:
+	st.w	[a10]32,d15
+.L272:
+	add.f	d2,d12,d9
+.L252:
+	movh	d15,#16128
+.L271:
+	sub.f	d0,d15,d13
+.L560:
+	ld.w	d15,[a10]32
+.L273:
+	sub.f	d0,d0,d15
+.L561:
+	sub.f	d1,d11,d10
+.L562:
+	ld.w	d15,[a10]52
+.L274:
+	mul.f	d1,d15,d1
+.L563:
+	ld.w	d15,[a10]48
+.L275:
+	madd.f	d0,d1,d15,d0
+.L564:
+	ld.w	d15,[a10]56
+.L276:
+	madd.f	d15,d0,d15,d2
+.L277:
+	movh	d0,#16384
+.L565:
+	mul.f	d1,d15,d0
+.L278:
+	sub.f	d2,d14,d8
+.L566:
+	add.f	d3,d11,d10
+.L567:
+	movh	d15,#16128
+.L568:
+	ld.w	d0,[a10]8
+.L280:
+	sub.f	d0,d15,d0
+.L281:
+	ld.w	d15,[a10]32
+.L282:
+	sub.f	d0,d0,d15
+.L569:
+	ld.w	d15,[a10]52
+.L283:
+	mul.f	d0,d15,d0
+.L570:
+	ld.w	d15,[a10]48
+.L284:
+	madd.f	d0,d0,d15,d3
+.L571:
+	ld.w	d15,[a10]56
+.L285:
+	madd.f	d15,d0,d15,d2
+.L286:
+	movh	d0,#16384
+.L572:
+	mul.f	d15,d15,d0
+.L287:
+	mul.f	d15,d15,d15
+.L288:
+	madd.f	d4,d15,d1,d1
+	call	sqrt
+.L279:
+	mov	d3,d2
+.L290:
+	movh	d15,#16128
+.L573:
+	ld.w	d0,[a10]8
+.L292:
+	sub.f	d15,d15,d0
+.L574:
+	sub.f	d0,d15,d13
+.L293:
+	sub.f	d1,d12,d9
+.L575:
+	add.f	d2,d14,d8
+.L289:
+	ld.w	d15,[a10]52
+.L294:
+	mul.f	d2,d15,d2
+.L576:
+	ld.w	d15,[a10]48
+.L295:
+	madd.f	d1,d2,d15,d1
+.L577:
+	ld.w	d15,[a10]56
+.L296:
+	madd.f	d15,d1,d15,d0
+.L297:
+	movh	d0,#16384
+.L578:
+	mul.f	d1,d15,d0
+.L298:
+	sub.f	d2,d12,d9
+.L300:
+	add.f	d4,d8,d14
+.L302:
+	movh	d0,#16128
+.L579:
+	ld.w	d15,[a10]12
+.L303:
+	sub.f	d0,d15,d0
+.L580:
+	ld.w	d15,[a10]32
+.L304:
+	add.f	d5,d0,d15
+.L306:
+	movh	d15,#16128
+.L305:
+	sub.f	d0,d15,d13
+.L581:
+	ld.w	d15,[a10]32
+.L307:
+	sub.f	d15,d0,d15
+.L308:
+	sub.f	d0,d12,d9
+.L582:
+	mul.f	d0,d1,d0
+.L583:
+	madd.f	d6,d0,d3,d15
+.L309:
+	sub.f	d15,d11,d10
+.L584:
+	add.f	d0,d8,d14
+.L585:
+	mul.f	d0,d1,d0
+.L586:
+	madd.f	d8,d0,d3,d15
+.L260:
+	add.f	d15,d9,d12
+.L587:
+	movh	d0,#16128
+.L588:
+	ld.w	d7,[a10]8
+.L310:
+	sub.f	d0,d0,d7
+.L589:
+	sub.f	d0,d0,d13
+.L590:
+	mul.f	d0,d1,d0
+.L591:
+	madd.f	d3,d0,d3,d15
+.L291:
+	ld.w	d15,[a10]40
+.L313:
+	mul.f	d0,d15,d5
+.L592:
+	ld.w	d15,[a10]44
+.L314:
+	msub.f	d0,d0,d15,d4
+.L593:
+	ld.w	d15,[a10]52
+.L315:
+	mul.f	d1,d15,d3
+.L299:
+	ld.w	d15,[a10]56
+.L316:
+	msub.f	d15,d1,d15,d8
+.L317:
+	add.f	d7,d0,d15
+.L311:
+	ld.w	d15,[a10]44
+.L318:
+	mul.f	d0,d15,d2
+.L594:
+	ld.w	d15,[a10]28
+.L319:
+	msub.f	d0,d0,d15,d5
+.L595:
+	ld.w	d15,[a10]56
+.L320:
+	mul.f	d1,d15,d6
+.L596:
+	ld.w	d15,[a10]48
+.L321:
+	msub.f	d15,d1,d15,d3
+.L322:
+	add.f	d3,d0,d15
+.L312:
+	ld.w	d15,[a10]28
+.L323:
+	mul.f	d15,d15,d4
+.L324:
+	ld.w	d0,[a10]40
+.L325:
+	msub.f	d0,d15,d0,d2
+.L326:
+	ld.w	d15,[a10]48
+.L327:
+	mul.f	d1,d15,d8
+.L597:
+	ld.w	d15,[a10]52
+.L328:
+	msub.f	d15,d1,d15,d6
+.L329:
+	add.f	d2,d0,d15
+.L301:
+	movh.a	a2,#@his(twoKi)
+	lea	a2,[a2]@los(twoKi)
+	ld.w	d15,[a2]
+.L598:
+	mov	d0,#0
+.L599:
+	cmp.f	d15,d15,d0
+	jnz.t	d15:2,.L9
+.L600:
+	movh.a	a2,#@his(integralFBx)
+	lea	a2,[a2]@los(integralFBx)
+.L601:
+	mov	d15,#0
+.L602:
+	st.w	[a2],d15
+.L603:
+	movh.a	a2,#@his(integralFBy)
+	lea	a2,[a2]@los(integralFBy)
+.L604:
+	mov	d15,#0
+.L605:
+	st.w	[a2],d15
+.L606:
+	movh.a	a2,#@his(integralFBz)
+	lea	a2,[a2]@los(integralFBz)
+.L607:
+	mov	d15,#0
+.L608:
+	st.w	[a2],d15
+.L609:
+	j	.L10
+.L9:
+	movh.a	a2,#@his(integralFBx)
+	lea	a2,[a2]@los(integralFBx)
+.L610:
+	movh.a	a4,#@his(twoKi)
+	lea	a4,[a4]@los(twoKi)
+	ld.w	d15,[a4]
+.L611:
+	mul.f	d15,d15,d7
+.L612:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L613:
+	movh.a	a4,#@his(integralFBx)
+	lea	a4,[a4]@los(integralFBx)
+	ld.w	d1,[a4]
+.L614:
+	madd.f	d15,d1,d15,d0
+	st.w	[a2],d15
+.L615:
+	movh.a	a2,#@his(integralFBy)
+	lea	a2,[a2]@los(integralFBy)
+.L616:
+	movh.a	a4,#@his(twoKi)
+	lea	a4,[a4]@los(twoKi)
+	ld.w	d15,[a4]
+.L617:
+	mul.f	d15,d15,d3
+.L618:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L619:
+	movh.a	a4,#@his(integralFBy)
+	lea	a4,[a4]@los(integralFBy)
+	ld.w	d1,[a4]
+.L620:
+	madd.f	d15,d1,d15,d0
+	st.w	[a2],d15
+.L621:
+	movh.a	a2,#@his(integralFBz)
+	lea	a2,[a2]@los(integralFBz)
+.L622:
+	movh.a	a4,#@his(twoKi)
+	lea	a4,[a4]@los(twoKi)
+	ld.w	d15,[a4]
+.L623:
+	mul.f	d15,d15,d2
+.L624:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L625:
+	movh.a	a4,#@his(integralFBz)
+	lea	a4,[a4]@los(integralFBz)
+	ld.w	d1,[a4]
+.L626:
+	madd.f	d15,d1,d15,d0
+	st.w	[a2],d15
+.L627:
+	movh.a	a2,#@his(integralFBx)
+	lea	a2,[a2]@los(integralFBx)
+	ld.w	d0,[a2]
+.L628:
+	ld.w	d15,[a10]16
+.L330:
+	add.f	d15,d15,d0
+	st.w	[a10]16,d15
+.L629:
+	movh.a	a2,#@his(integralFBy)
+	lea	a2,[a2]@los(integralFBy)
+	ld.w	d0,[a2]
+.L630:
+	ld.w	d15,[a10]20
+.L331:
+	add.f	d15,d15,d0
+	st.w	[a10]20,d15
+.L631:
+	movh.a	a2,#@his(integralFBz)
+	lea	a2,[a2]@los(integralFBz)
+	ld.w	d0,[a2]
+.L632:
+	ld.w	d15,[a10]24
+.L332:
+	add.f	d15,d15,d0
+	st.w	[a10]24,d15
+.L10:
+	movh.a	a2,#@his(twoKp)
+	lea	a2,[a2]@los(twoKp)
+	ld.w	d0,[a2]
+.L633:
+	ld.w	d15,[a10]16
+.L333:
+	madd.f	d15,d15,d0,d7
+	st.w	[a10]16,d15
+.L634:
+	movh.a	a2,#@his(twoKp)
+	lea	a2,[a2]@los(twoKp)
+	ld.w	d0,[a2]
+.L635:
+	ld.w	d15,[a10]20
+.L334:
+	madd.f	d15,d15,d0,d3
+	st.w	[a10]20,d15
+.L636:
+	movh.a	a2,#@his(twoKp)
+	lea	a2,[a2]@los(twoKp)
+	ld.w	d0,[a2]
+.L637:
+	ld.w	d15,[a10]24
+.L335:
+	madd.f	d15,d15,d0,d2
+	st.w	[a10]24,d15
+.L8:
+	mov	d0,#4719
+	addih	d0,d0,#14979
+.L638:
+	ld.w	d15,[a10]16
+.L336:
+	mul.f	d3,d15,d0
+.L337:
+	mov	d0,#4719
+	addih	d0,d0,#14979
+.L639:
+	ld.w	d15,[a10]20
+.L339:
+	mul.f	d5,d15,d0
+.L340:
+	mov	d0,#4719
+	addih	d0,d0,#14979
+.L640:
+	ld.w	d15,[a10]24
+.L342:
+	mul.f	d2,d15,d0
+.L343:
+	ld.w	d4,[a15]
+.L345:
+	ld.w	d6,[a15]4
+.L347:
+	ld.w	d7,[a15]8
+.L349:
+	ld.w	d0,[a15]
+.L641:
+	insn.t	d1,d6:31,d6:31
+.L642:
+	mul.f	d1,d1,d3
+.L643:
+	msub.f	d1,d1,d7,d5
+.L644:
+	ld.w	d15,[a15]12
+.L645:
+	msub.f	d1,d1,d15,d2
+.L646:
+	add.f	d0,d0,d1
+	st.w	[a15],d0
+.L647:
+	ld.w	d0,[a15]4
+.L648:
+	mul.f	d1,d7,d2
+.L649:
+	madd.f	d1,d1,d4,d3
+.L650:
+	ld.w	d15,[a15]12
+.L651:
+	msub.f	d15,d1,d15,d5
+.L652:
+	add.f	d15,d0,d15
+	st.w	[a15]4,d15
+.L653:
+	ld.w	d15,[a15]8
+.L654:
+	ld.w	d0,[a15]12
+.L655:
+	mul.f	d1,d4,d5
+.L656:
+	msub.f	d1,d1,d6,d2
+.L657:
+	madd.f	d0,d1,d0,d3
+.L658:
+	add.f	d15,d15,d0
+	st.w	[a15]8,d15
+.L659:
+	ld.w	d15,[a15]12
+.L660:
+	mul.f	d0,d6,d5
+.L661:
+	madd.f	d0,d0,d4,d2
+.L662:
+	msub.f	d0,d0,d7,d3
+.L663:
+	add.f	d15,d15,d0
+	st.w	[a15]12,d15
+.L664:
+	ld.w	d0,[a15]12
+.L665:
+	ld.w	d1,[a15]12
+.L666:
+	ld.w	d2,[a15]8
+.L344:
+	ld.w	d3,[a15]8
+.L338:
+	ld.w	d4,[a15]
+.L346:
+	ld.w	d5,[a15]
+.L341:
+	ld.w	d6,[a15]4
+.L348:
+	ld.w	d15,[a15]4
+.L667:
+	mul.f	d15,d6,d15
+.L668:
+	madd.f	d15,d15,d4,d5
+.L669:
+	madd.f	d15,d15,d2,d3
+.L670:
+	madd.f	d4,d15,d0,d1
+	call	invSqrt
+.L350:
+	ld.w	d15,[a15]
+.L671:
+	mul.f	d15,d15,d2
+	st.w	[a15],d15
+.L672:
+	ld.w	d15,[a15]4
+.L673:
+	mul.f	d15,d15,d2
+	st.w	[a15]4,d15
+.L674:
+	ld.w	d15,[a15]8
+.L675:
+	mul.f	d15,d15,d2
+	st.w	[a15]8,d15
+.L676:
+	ld.w	d15,[a15]12
+.L677:
+	mul.f	d15,d15,d2
+	st.w	[a15]12,d15
+.L5:
+	ret
+.L123:
+	
+__MahonyAHRSupdate_function_end:
+	.size	MahonyAHRSupdate,__MahonyAHRSupdate_function_end-MahonyAHRSupdate
+.L61:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.MahonyAHRSupdateIMU',code,cluster('MahonyAHRSupdateIMU')
+	.sect	'.text.MahonyAHRS.MahonyAHRSupdateIMU'
+	.align	2
+	
+	.global	MahonyAHRSupdateIMU
+; Function MahonyAHRSupdateIMU
+.L33:
+MahonyAHRSupdateIMU:	.type	func
+	mov.aa	a15,a4
+.L353:
+	mov	e8,d5,d4
+	mov	e10,d7,d6
+	ld.w	d12,[a10]
+.L354:
+	ld.w	d13,[a10]4
+.L356:
+	extr.u	d0,d11,#23,#8
+.L357:
+	eq	d15,d0,#0
+.L731:
+	jeq	d15,#0,.L11
+.L732:
+	extr.u	d15,d12,#23,#8
+	eq	d15,d15,#0
+	jeq	d15,#0,.L12
+.L733:
+	extr.u	d15,d13,#23,#8
+	jeq	d15,#0,.L13
+.L12:
+.L11:
+	mul.f	d15,d12,d12
+.L359:
+	madd.f	d15,d15,d11,d11
+.L360:
+	madd.f	d4,d15,d13,d13
+.L352:
+	call	invSqrt
+.L351:
+	mul.f	d3,d11,d2
+.L361:
+	mul.f	d4,d12,d2
+.L355:
+	mul.f	d5,d13,d2
+.L358:
+	ld.w	d15,[a15]4
+.L734:
+	ld.w	d0,[a15]12
+.L735:
+	mul.f	d0,d15,d0
+.L736:
+	ld.w	d1,[a15]
+.L737:
+	ld.w	d15,[a15]8
+.L738:
+	msub.f	d6,d0,d1,d15
+.L365:
+	ld.w	d0,[a15]
+.L739:
+	ld.w	d1,[a15]4
+.L740:
+	ld.w	d2,[a15]8
+.L362:
+	ld.w	d15,[a15]12
+.L741:
+	mul.f	d15,d2,d15
+.L742:
+	madd.f	d7,d15,d0,d1
+.L366:
+	ld.w	d15,[a15]12
+.L743:
+	ld.w	d0,[a15]12
+.L744:
+	ld.w	d1,[a15]
+.L745:
+	ld.w	d2,[a15]
+.L746:
+	mul.f	d1,d1,d2
+.L747:
+	movh	d2,#16128
+.L748:
+	sub.f	d1,d1,d2
+.L749:
+	madd.f	d15,d1,d15,d0
+.L367:
+	mul.f	d0,d4,d15
+.L750:
+	msub.f	d1,d0,d5,d7
+.L369:
+	mul.f	d0,d5,d6
+.L751:
+	msub.f	d2,d0,d3,d15
+.L370:
+	mul.f	d15,d3,d7
+.L368:
+	msub.f	d4,d15,d4,d6
+.L364:
+	movh.a	a2,#@his(twoKi)
+	lea	a2,[a2]@los(twoKi)
+	ld.w	d15,[a2]
+.L752:
+	mov	d0,#0
+.L753:
+	cmp.f	d15,d15,d0
+	jnz.t	d15:2,.L14
+.L754:
+	movh.a	a2,#@his(integralFBx)
+	lea	a2,[a2]@los(integralFBx)
+.L755:
+	mov	d15,#0
+.L756:
+	st.w	[a2],d15
+.L757:
+	movh.a	a2,#@his(integralFBy)
+	lea	a2,[a2]@los(integralFBy)
+.L758:
+	mov	d15,#0
+.L759:
+	st.w	[a2],d15
+.L760:
+	movh.a	a2,#@his(integralFBz)
+	lea	a2,[a2]@los(integralFBz)
+.L761:
+	mov	d15,#0
+.L762:
+	st.w	[a2],d15
+.L763:
+	j	.L15
+.L14:
+	movh.a	a2,#@his(integralFBx_yaw)
+	lea	a2,[a2]@los(integralFBx_yaw)
+.L764:
+	movh.a	a4,#@his(twoKi)
+	lea	a4,[a4]@los(twoKi)
+	ld.w	d15,[a4]
+.L765:
+	mul.f	d15,d15,d1
+.L766:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L767:
+	movh.a	a4,#@his(integralFBx_yaw)
+	lea	a4,[a4]@los(integralFBx_yaw)
+	ld.w	d3,[a4]
+.L363:
+	madd.f	d15,d3,d15,d0
+	st.w	[a2],d15
+.L768:
+	movh.a	a2,#@his(integralFBy_yaw)
+	lea	a2,[a2]@los(integralFBy_yaw)
+.L769:
+	movh.a	a4,#@his(twoKi)
+	lea	a4,[a4]@los(twoKi)
+	ld.w	d15,[a4]
+.L770:
+	mul.f	d15,d15,d2
+.L771:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L772:
+	movh.a	a4,#@his(integralFBy_yaw)
+	lea	a4,[a4]@los(integralFBy_yaw)
+	ld.w	d3,[a4]
+.L773:
+	madd.f	d15,d3,d15,d0
+	st.w	[a2],d15
+.L774:
+	movh.a	a2,#@his(integralFBz_yaw)
+	lea	a2,[a2]@los(integralFBz_yaw)
+.L775:
+	movh.a	a4,#@his(twoKi)
+	lea	a4,[a4]@los(twoKi)
+	ld.w	d15,[a4]
+.L776:
+	mul.f	d15,d15,d4
+.L777:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L778:
+	movh.a	a4,#@his(integralFBz_yaw)
+	lea	a4,[a4]@los(integralFBz_yaw)
+	ld.w	d3,[a4]
+.L779:
+	madd.f	d15,d3,d15,d0
+	st.w	[a2],d15
+.L780:
+	movh.a	a2,#@his(integralFBx_yaw)
+	lea	a2,[a2]@los(integralFBx_yaw)
+	ld.w	d15,[a2]
+.L371:
+	add.f	d8,d8,d15
+.L781:
+	movh.a	a2,#@his(integralFBy_yaw)
+	lea	a2,[a2]@los(integralFBy_yaw)
+	ld.w	d15,[a2]
+.L372:
+	add.f	d9,d9,d15
+.L782:
+	movh.a	a2,#@his(integralFBz_yaw)
+	lea	a2,[a2]@los(integralFBz_yaw)
+	ld.w	d15,[a2]
+.L373:
+	add.f	d10,d10,d15
+.L15:
+	movh.a	a2,#@his(twoKp)
+	lea	a2,[a2]@los(twoKp)
+	ld.w	d15,[a2]
+.L374:
+	madd.f	d8,d8,d15,d1
+.L783:
+	movh.a	a2,#@his(twoKp)
+	lea	a2,[a2]@los(twoKp)
+	ld.w	d15,[a2]
+.L375:
+	madd.f	d9,d9,d15,d2
+.L784:
+	movh.a	a2,#@his(twoKp)
+	lea	a2,[a2]@los(twoKp)
+	ld.w	d15,[a2]
+.L376:
+	madd.f	d10,d10,d15,d4
+.L13:
+	mov	d15,#4719
+	addih	d15,d15,#14979
+.L377:
+	mul.f	d3,d8,d15
+.L378:
+	mov	d15,#4719
+	addih	d15,d15,#14979
+.L380:
+	mul.f	d5,d9,d15
+.L381:
+	mov	d15,#4719
+	addih	d15,d15,#14979
+.L383:
+	mul.f	d2,d10,d15
+.L384:
+	ld.w	d4,[a15]
+.L386:
+	ld.w	d6,[a15]4
+.L388:
+	ld.w	d7,[a15]8
+.L390:
+	ld.w	d0,[a15]
+.L785:
+	insn.t	d1,d6:31,d6:31
+.L786:
+	mul.f	d1,d1,d3
+.L787:
+	msub.f	d1,d1,d7,d5
+.L788:
+	ld.w	d15,[a15]12
+.L789:
+	msub.f	d1,d1,d15,d2
+.L790:
+	add.f	d0,d0,d1
+	st.w	[a15],d0
+.L791:
+	ld.w	d0,[a15]4
+.L792:
+	mul.f	d1,d7,d2
+.L793:
+	madd.f	d1,d1,d4,d3
+.L794:
+	ld.w	d15,[a15]12
+.L795:
+	msub.f	d15,d1,d15,d5
+.L796:
+	add.f	d15,d0,d15
+	st.w	[a15]4,d15
+.L797:
+	ld.w	d15,[a15]8
+.L798:
+	ld.w	d0,[a15]12
+.L799:
+	mul.f	d1,d4,d5
+.L800:
+	msub.f	d1,d1,d6,d2
+.L801:
+	madd.f	d0,d1,d0,d3
+.L802:
+	add.f	d15,d15,d0
+	st.w	[a15]8,d15
+.L803:
+	ld.w	d15,[a15]12
+.L804:
+	mul.f	d0,d6,d5
+.L805:
+	madd.f	d0,d0,d4,d2
+.L806:
+	msub.f	d0,d0,d7,d3
+.L807:
+	add.f	d15,d15,d0
+	st.w	[a15]12,d15
+.L808:
+	ld.w	d0,[a15]12
+.L809:
+	ld.w	d1,[a15]12
+.L810:
+	ld.w	d2,[a15]8
+.L385:
+	ld.w	d3,[a15]8
+.L379:
+	ld.w	d4,[a15]
+.L387:
+	ld.w	d5,[a15]
+.L382:
+	ld.w	d6,[a15]4
+.L389:
+	ld.w	d15,[a15]4
+.L811:
+	mul.f	d15,d6,d15
+.L812:
+	madd.f	d15,d15,d4,d5
+.L813:
+	madd.f	d15,d15,d2,d3
+.L814:
+	madd.f	d4,d15,d0,d1
+	call	invSqrt
+.L391:
+	ld.w	d15,[a15]
+.L815:
+	mul.f	d15,d15,d2
+	st.w	[a15],d15
+.L816:
+	ld.w	d15,[a15]4
+.L817:
+	mul.f	d15,d15,d2
+	st.w	[a15]4,d15
+.L818:
+	ld.w	d15,[a15]8
+.L819:
+	mul.f	d15,d15,d2
+	st.w	[a15]8,d15
+.L820:
+	ld.w	d15,[a15]12
+.L821:
+	mul.f	d15,d15,d2
+	st.w	[a15]12,d15
+.L822:
+	ret
+.L166:
+	
+__MahonyAHRSupdateIMU_function_end:
+	.size	MahonyAHRSupdateIMU,__MahonyAHRSupdateIMU_function_end-MahonyAHRSupdateIMU
+.L71:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.MahonyAHRSupdateIMU_yaw',code,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.text.MahonyAHRS.MahonyAHRSupdateIMU_yaw'
+	.align	2
+	
+	.global	MahonyAHRSupdateIMU_yaw
+; Function MahonyAHRSupdateIMU_yaw
+.L35:
+MahonyAHRSupdateIMU_yaw:	.type	func
+	mov.aa	a15,a4
+.L394:
+	mov	e8,d5,d4
+	mov	e10,d7,d6
+	ld.w	d12,[a10]
+.L395:
+	ld.w	d13,[a10]4
+.L397:
+	extr.u	d0,d11,#23,#8
+.L398:
+	eq	d15,d0,#0
+.L836:
+	jeq	d15,#0,.L16
+.L837:
+	extr.u	d15,d12,#23,#8
+	eq	d15,d15,#0
+	jeq	d15,#0,.L17
+.L838:
+	extr.u	d15,d13,#23,#8
+	jeq	d15,#0,.L18
+.L17:
+.L16:
+	mul.f	d15,d12,d12
+.L400:
+	madd.f	d15,d15,d11,d11
+.L401:
+	madd.f	d4,d15,d13,d13
+.L393:
+	call	invSqrt
+.L392:
+	mul.f	d3,d11,d2
+.L402:
+	mul.f	d4,d12,d2
+.L396:
+	mul.f	d5,d13,d2
+.L399:
+	ld.w	d15,[a15]4
+.L839:
+	ld.w	d0,[a15]12
+.L840:
+	mul.f	d0,d15,d0
+.L841:
+	ld.w	d1,[a15]
+.L842:
+	ld.w	d15,[a15]8
+.L843:
+	msub.f	d6,d0,d1,d15
+.L406:
+	ld.w	d0,[a15]
+.L844:
+	ld.w	d1,[a15]4
+.L845:
+	ld.w	d2,[a15]8
+.L403:
+	ld.w	d15,[a15]12
+.L846:
+	mul.f	d15,d2,d15
+.L847:
+	madd.f	d7,d15,d0,d1
+.L407:
+	ld.w	d15,[a15]12
+.L848:
+	ld.w	d0,[a15]12
+.L849:
+	ld.w	d1,[a15]
+.L850:
+	ld.w	d2,[a15]
+.L851:
+	mul.f	d1,d1,d2
+.L852:
+	movh	d2,#16128
+.L853:
+	sub.f	d1,d1,d2
+.L854:
+	madd.f	d15,d1,d15,d0
+.L408:
+	mul.f	d0,d4,d15
+.L855:
+	msub.f	d1,d0,d5,d7
+.L410:
+	mul.f	d0,d5,d6
+.L856:
+	msub.f	d2,d0,d3,d15
+.L411:
+	mul.f	d15,d3,d7
+.L409:
+	msub.f	d4,d15,d4,d6
+.L405:
+	movh.a	a2,#@his(twoKi)
+	lea	a2,[a2]@los(twoKi)
+	ld.w	d15,[a2]
+.L857:
+	mov	d0,#0
+.L858:
+	cmp.f	d15,d15,d0
+	jnz.t	d15:2,.L19
+.L859:
+	movh.a	a2,#@his(integralFBx_yaw)
+	lea	a2,[a2]@los(integralFBx_yaw)
+.L860:
+	mov	d15,#0
+.L861:
+	st.w	[a2],d15
+.L862:
+	movh.a	a2,#@his(integralFBy_yaw)
+	lea	a2,[a2]@los(integralFBy_yaw)
+.L863:
+	mov	d15,#0
+.L864:
+	st.w	[a2],d15
+.L865:
+	movh.a	a2,#@his(integralFBz_yaw)
+	lea	a2,[a2]@los(integralFBz_yaw)
+.L866:
+	mov	d15,#0
+.L867:
+	st.w	[a2],d15
+.L868:
+	j	.L20
+.L19:
+	movh.a	a2,#@his(integralFBx_yaw)
+	lea	a2,[a2]@los(integralFBx_yaw)
+.L869:
+	movh.a	a4,#@his(twoKi_yaw)
+	lea	a4,[a4]@los(twoKi_yaw)
+	ld.w	d15,[a4]
+.L870:
+	mul.f	d15,d15,d1
+.L871:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L872:
+	movh.a	a4,#@his(integralFBx_yaw)
+	lea	a4,[a4]@los(integralFBx_yaw)
+	ld.w	d3,[a4]
+.L404:
+	madd.f	d15,d3,d15,d0
+	st.w	[a2],d15
+.L873:
+	movh.a	a2,#@his(integralFBy_yaw)
+	lea	a2,[a2]@los(integralFBy_yaw)
+.L874:
+	movh.a	a4,#@his(twoKi_yaw)
+	lea	a4,[a4]@los(twoKi_yaw)
+	ld.w	d15,[a4]
+.L875:
+	mul.f	d15,d15,d2
+.L876:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L877:
+	movh.a	a4,#@his(integralFBy_yaw)
+	lea	a4,[a4]@los(integralFBy_yaw)
+	ld.w	d3,[a4]
+.L878:
+	madd.f	d15,d3,d15,d0
+	st.w	[a2],d15
+.L879:
+	movh.a	a2,#@his(integralFBz_yaw)
+	lea	a2,[a2]@los(integralFBz_yaw)
+.L880:
+	movh.a	a4,#@his(twoKi_yaw)
+	lea	a4,[a4]@los(twoKi_yaw)
+	ld.w	d15,[a4]
+.L881:
+	mul.f	d15,d15,d4
+.L882:
+	mov	d0,#4719
+	addih	d0,d0,#15107
+.L883:
+	movh.a	a4,#@his(integralFBz_yaw)
+	lea	a4,[a4]@los(integralFBz_yaw)
+	ld.w	d3,[a4]
+.L884:
+	madd.f	d15,d3,d15,d0
+	st.w	[a2],d15
+.L885:
+	movh.a	a2,#@his(integralFBx_yaw)
+	lea	a2,[a2]@los(integralFBx_yaw)
+	ld.w	d15,[a2]
+.L412:
+	add.f	d8,d8,d15
+.L886:
+	movh.a	a2,#@his(integralFBy_yaw)
+	lea	a2,[a2]@los(integralFBy_yaw)
+	ld.w	d15,[a2]
+.L413:
+	add.f	d9,d9,d15
+.L887:
+	movh.a	a2,#@his(integralFBz_yaw)
+	lea	a2,[a2]@los(integralFBz_yaw)
+	ld.w	d15,[a2]
+.L414:
+	add.f	d10,d10,d15
+.L20:
+	movh.a	a2,#@his(twoKp_yaw)
+	lea	a2,[a2]@los(twoKp_yaw)
+	ld.w	d15,[a2]
+.L415:
+	madd.f	d8,d8,d15,d1
+.L888:
+	movh.a	a2,#@his(twoKp_yaw)
+	lea	a2,[a2]@los(twoKp_yaw)
+	ld.w	d15,[a2]
+.L416:
+	madd.f	d9,d9,d15,d2
+.L889:
+	movh.a	a2,#@his(twoKp_yaw)
+	lea	a2,[a2]@los(twoKp_yaw)
+	ld.w	d15,[a2]
+.L417:
+	madd.f	d10,d10,d15,d4
+.L18:
+	mov	d15,#4719
+	addih	d15,d15,#14979
+.L418:
+	mul.f	d3,d8,d15
+.L419:
+	mov	d15,#4719
+	addih	d15,d15,#14979
+.L421:
+	mul.f	d5,d9,d15
+.L422:
+	mov	d15,#4719
+	addih	d15,d15,#14979
+.L424:
+	mul.f	d2,d10,d15
+.L425:
+	ld.w	d4,[a15]
+.L427:
+	ld.w	d6,[a15]4
+.L429:
+	ld.w	d7,[a15]8
+.L431:
+	ld.w	d0,[a15]
+.L890:
+	insn.t	d1,d6:31,d6:31
+.L891:
+	mul.f	d1,d1,d3
+.L892:
+	msub.f	d1,d1,d7,d5
+.L893:
+	ld.w	d15,[a15]12
+.L894:
+	msub.f	d1,d1,d15,d2
+.L895:
+	add.f	d0,d0,d1
+	st.w	[a15],d0
+.L896:
+	ld.w	d0,[a15]4
+.L897:
+	mul.f	d1,d7,d2
+.L898:
+	madd.f	d1,d1,d4,d3
+.L899:
+	ld.w	d15,[a15]12
+.L900:
+	msub.f	d15,d1,d15,d5
+.L901:
+	add.f	d15,d0,d15
+	st.w	[a15]4,d15
+.L902:
+	ld.w	d15,[a15]8
+.L903:
+	ld.w	d0,[a15]12
+.L904:
+	mul.f	d1,d4,d5
+.L905:
+	msub.f	d1,d1,d6,d2
+.L906:
+	madd.f	d0,d1,d0,d3
+.L907:
+	add.f	d15,d15,d0
+	st.w	[a15]8,d15
+.L908:
+	ld.w	d15,[a15]12
+.L909:
+	mul.f	d0,d6,d5
+.L910:
+	madd.f	d0,d0,d4,d2
+.L911:
+	msub.f	d0,d0,d7,d3
+.L912:
+	add.f	d15,d15,d0
+	st.w	[a15]12,d15
+.L913:
+	ld.w	d0,[a15]12
+.L914:
+	ld.w	d1,[a15]12
+.L915:
+	ld.w	d2,[a15]8
+.L426:
+	ld.w	d3,[a15]8
+.L420:
+	ld.w	d4,[a15]
+.L428:
+	ld.w	d5,[a15]
+.L423:
+	ld.w	d6,[a15]4
+.L430:
+	ld.w	d15,[a15]4
+.L916:
+	mul.f	d15,d6,d15
+.L917:
+	madd.f	d15,d15,d4,d5
+.L918:
+	madd.f	d15,d15,d2,d3
+.L919:
+	madd.f	d4,d15,d0,d1
+	call	invSqrt
+.L432:
+	ld.w	d15,[a15]
+.L920:
+	mul.f	d15,d15,d2
+	st.w	[a15],d15
+.L921:
+	ld.w	d15,[a15]4
+.L922:
+	mul.f	d15,d15,d2
+	st.w	[a15]4,d15
+.L923:
+	ld.w	d15,[a15]8
+.L924:
+	mul.f	d15,d15,d2
+	st.w	[a15]8,d15
+.L925:
+	ld.w	d15,[a15]12
+.L926:
+	mul.f	d15,d15,d2
+	st.w	[a15]12,d15
+.L927:
+	ret
+.L190:
+	
+__MahonyAHRSupdateIMU_yaw_function_end:
+	.size	MahonyAHRSupdateIMU_yaw,__MahonyAHRSupdateIMU_yaw_function_end-MahonyAHRSupdateIMU_yaw
+.L81:
+	; End of function
+	
+	.sdecl	'.text.MahonyAHRS.invSqrt',code,cluster('invSqrt')
+	.sect	'.text.MahonyAHRS.invSqrt'
+	.align	2
+	
+	.global	invSqrt
+; Function invSqrt
+.L37:
+invSqrt:	.type	func
+	movh	d15,#16128
+.L827:
+	mul.f	d0,d4,d15
+.L434:
+	mov	d15,#23007
+	addih	d15,d15,#24375
+.L828:
+	sha	d4,#-1
+.L433:
+	sub	d15,d4
+.L829:
+	movh	d1,#16320
+.L830:
+	mul.f	d0,d0,d15
+.L435:
+	msub.f	d0,d1,d0,d15
+.L831:
+	mul.f	d2,d15,d0
+.L436:
+	j	.L21
+.L21:
+	ret
+.L184:
+	
+__invSqrt_function_end:
+	.size	invSqrt,__invSqrt_function_end-invSqrt
+.L76:
+	; End of function
+	
+	.sdecl	'.data.MahonyAHRS.twoKp',data,cluster('twoKp')
+	.sect	'.data.MahonyAHRS.twoKp'
+	.global	twoKp
+	.align	2
+twoKp:	.type	object
+	.size	twoKp,4
+	.word	1065353216
+	.sdecl	'.data.MahonyAHRS.twoKi',data,cluster('twoKi')
+	.sect	'.data.MahonyAHRS.twoKi'
+	.global	twoKi
+	.align	2
+twoKi:	.type	object
+	.size	twoKi,4
+	.word	1036831949
+	.sdecl	'.data.MahonyAHRS.twoKp_yaw',data,cluster('twoKp_yaw')
+	.sect	'.data.MahonyAHRS.twoKp_yaw'
+	.global	twoKp_yaw
+	.align	2
+twoKp_yaw:	.type	object
+	.size	twoKp_yaw,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.twoKi_yaw',data,cluster('twoKi_yaw')
+	.sect	'.data.MahonyAHRS.twoKi_yaw'
+	.global	twoKi_yaw
+	.align	2
+twoKi_yaw:	.type	object
+	.size	twoKi_yaw,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.integralFBx',data,cluster('integralFBx')
+	.sect	'.data.MahonyAHRS.integralFBx'
+	.global	integralFBx
+	.align	2
+integralFBx:	.type	object
+	.size	integralFBx,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.integralFBy',data,cluster('integralFBy')
+	.sect	'.data.MahonyAHRS.integralFBy'
+	.global	integralFBy
+	.align	2
+integralFBy:	.type	object
+	.size	integralFBy,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.integralFBz',data,cluster('integralFBz')
+	.sect	'.data.MahonyAHRS.integralFBz'
+	.global	integralFBz
+	.align	2
+integralFBz:	.type	object
+	.size	integralFBz,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.integralFBx_yaw',data,cluster('integralFBx_yaw')
+	.sect	'.data.MahonyAHRS.integralFBx_yaw'
+	.global	integralFBx_yaw
+	.align	2
+integralFBx_yaw:	.type	object
+	.size	integralFBx_yaw,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.integralFBy_yaw',data,cluster('integralFBy_yaw')
+	.sect	'.data.MahonyAHRS.integralFBy_yaw'
+	.global	integralFBy_yaw
+	.align	2
+integralFBy_yaw:	.type	object
+	.size	integralFBy_yaw,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.integralFBz_yaw',data,cluster('integralFBz_yaw')
+	.sect	'.data.MahonyAHRS.integralFBz_yaw'
+	.global	integralFBz_yaw
+	.align	2
+integralFBz_yaw:	.type	object
+	.size	integralFBz_yaw,4
+	.space	4
+	.sdecl	'.data.MahonyAHRS.IMUData',data,cluster('IMUData')
+	.sect	'.data.MahonyAHRS.IMUData'
+	.global	IMUData
+	.align	4
+IMUData:	.type	object
+	.size	IMUData,128
+	.space	128
+	.sdecl	'.data.MahonyAHRS.yaw_real',data,cluster('yaw_real')
+	.sect	'.data.MahonyAHRS.yaw_real'
+	.global	yaw_real
+	.align	2
+yaw_real:	.type	object
+	.size	yaw_real,4
+	.space	4
+	.calls	'AHRS_update','MahonyAHRSupdate'
+	.calls	'get_angle','atan2'
+	.calls	'get_angle','asinf'
+	.calls	'get_angle','atan2f'
+	.calls	'get_angle_e','atan2f'
+	.calls	'get_angle_e','asinf'
+	.calls	'MahonyAHRSupdate','MahonyAHRSupdateIMU'
+	.calls	'MahonyAHRSupdate','invSqrt'
+	.calls	'MahonyAHRSupdate','sqrt'
+	.calls	'MahonyAHRSupdateIMU','invSqrt'
+	.calls	'MahonyAHRSupdateIMU_yaw','invSqrt'
+	.calls	'AHRS_init','',0
+	.calls	'AHRS_update','',24
+	.calls	'get_angle','',0
+	.calls	'get_angle_e','',0
+	.calls	'MahonyAHRSupdate','',40
+	.calls	'MahonyAHRSupdateIMU','',0
+	.calls	'MahonyAHRSupdateIMU_yaw','',0
+	.extern	asinf
+	.extern	atan2
+	.extern	atan2f
+	.extern	sqrt
+	.calls	'invSqrt','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L39:
+	.word	950
+	.half	3
+	.word	.L40
+	.byte	4
+.L38:
+	.byte	1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L41
+.L113:
+	.byte	2
+	.byte	'float',0,4,4
+.L107:
+	.byte	3
+	.word	158
+	.byte	4
+	.byte	'asinf',0,1,98,25
+	.word	158
+	.byte	1,1,1,1,5,1,98,43
+	.word	158
+	.byte	0,4
+	.byte	'atan2',0,1,106,25
+	.word	158
+	.byte	1,1,1,1,5,1,106,43
+	.word	158
+	.byte	5,1,106,51
+	.word	158
+	.byte	0,4
+	.byte	'atan2f',0,1,107,25
+	.word	158
+	.byte	1,1,1,1,5,1,107,43
+	.word	158
+	.byte	5,1,107,50
+	.word	158
+	.byte	0,4
+	.byte	'sqrt',0,1,186,1,25
+	.word	158
+	.byte	1,1,1,1,5,1,186,1,43
+	.word	158
+	.byte	0
+.L188:
+	.byte	2
+	.byte	'long int',0,4,5,6,1,3
+	.word	310
+	.byte	7
+	.byte	'__codeptr',0,2,1,1
+	.word	312
+	.byte	2
+	.byte	'unsigned char',0,1,8,8,16
+	.word	158
+	.byte	9,3,0
+.L208:
+	.byte	10,3,18,9,128,1,11
+	.byte	'gx_RowFrame',0
+	.word	158
+	.byte	4,2,35,0,11
+	.byte	'gy_RowFrame',0
+	.word	158
+	.byte	4,2,35,4,11
+	.byte	'gz_RowFrame',0
+	.word	158
+	.byte	4,2,35,8,11
+	.byte	'ax_RowFrame',0
+	.word	158
+	.byte	4,2,35,12,11
+	.byte	'ay_RowFrame',0
+	.word	158
+	.byte	4,2,35,16,11
+	.byte	'az_RowFrame',0
+	.word	158
+	.byte	4,2,35,20,11
+	.byte	'gx',0
+	.word	158
+	.byte	4,2,35,24,11
+	.byte	'gy',0
+	.word	158
+	.byte	4,2,35,28,11
+	.byte	'gz',0
+	.word	158
+	.byte	4,2,35,32,11
+	.byte	'gx_Filt',0
+	.word	158
+	.byte	4,2,35,36,11
+	.byte	'gy_Filt',0
+	.word	158
+	.byte	4,2,35,40,11
+	.byte	'gz_Filt',0
+	.word	158
+	.byte	4,2,35,44,11
+	.byte	'gxOffset',0
+	.word	158
+	.byte	4,2,35,48,11
+	.byte	'gyOffset',0
+	.word	158
+	.byte	4,2,35,52,11
+	.byte	'gzOffset',0
+	.word	158
+	.byte	4,2,35,56,11
+	.byte	'gxOffsetSum',0
+	.word	158
+	.byte	4,2,35,60,11
+	.byte	'gyOffsetSum',0
+	.word	158
+	.byte	4,2,35,64,11
+	.byte	'gzOffsetSum',0
+	.word	158
+	.byte	4,2,35,68,11
+	.byte	'offsetErrCount',0
+	.word	335
+	.byte	1,2,35,72,11
+	.byte	'ax',0
+	.word	158
+	.byte	4,2,35,74,11
+	.byte	'ay',0
+	.word	158
+	.byte	4,2,35,78,11
+	.byte	'az',0
+	.word	158
+	.byte	4,2,35,82,11
+	.byte	'ax_Filt',0
+	.word	158
+	.byte	4,2,35,86,11
+	.byte	'ay_Filt',0
+	.word	158
+	.byte	4,2,35,90,11
+	.byte	'az_Filt',0
+	.word	158
+	.byte	4,2,35,94,11
+	.byte	'q',0
+	.word	352
+	.byte	16,2,35,98,11
+	.byte	'roll_mahony',0
+	.word	158
+	.byte	4,2,35,114,11
+	.byte	'pitch_mahony',0
+	.word	158
+	.byte	4,2,35,118,11
+	.byte	'yaw_mahony',0
+	.word	158
+	.byte	4,2,35,122,0,7
+	.byte	'IMUDataType',0,3,61,2
+	.word	361
+.L209:
+	.byte	12
+	.word	158
+.L210:
+	.byte	12
+	.word	158
+.L211:
+	.byte	12
+	.word	158
+.L212:
+	.byte	12
+	.word	158
+.L213:
+	.byte	12
+	.word	158
+.L214:
+	.byte	12
+	.word	158
+.L215:
+	.byte	12
+	.word	158
+.L216:
+	.byte	12
+	.word	158
+.L217:
+	.byte	12
+	.word	158
+.L218:
+	.byte	12
+	.word	158
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L40:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,46,1,3,8,58
+	.byte	15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,5,5,0,58,15,59,15,57,15,73,19,0,0,6,21,0,54,15,0,0,7
+	.byte	22,0,3,8,58,15,59,15,57,15,73,19,0,0,8,1,1,11,15,73,19,0,0,9,33,0,47,15,0,0,10,19,1,58,15,59,15,57,15
+	.byte	11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,53,0,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L41:
+	.word	.L438-.L437
+.L437:
+	.half	3
+	.word	.L440-.L439
+.L439:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\ADS\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
+	.byte	'math.h',0,1,0,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0
+	.byte	'..\\code\\JBD_IMU\\MahonyAHRS.h',0,0,0,0,0
+.L440:
+.L438:
+	.sdecl	'.debug_info',debug,cluster('AHRS_init')
+	.sect	'.debug_info'
+.L42:
+	.word	254
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L45,.L44
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'AHRS_init',0,1,53,6,1,1,1
+	.word	.L23,.L106,.L22
+	.byte	4
+	.byte	'quat',0,1,53,22
+	.word	.L107,.L108
+	.byte	4
+	.byte	'accel',0,1,53,37
+	.word	.L107,.L109
+	.byte	4
+	.byte	'mag',0,1,53,53
+	.word	.L107,.L110
+	.byte	5
+	.word	.L23,.L106
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('AHRS_init')
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('AHRS_init')
+	.sect	'.debug_line'
+.L44:
+	.word	.L442-.L441
+.L441:
+	.half	3
+	.word	.L444-.L443
+.L443:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L444:
+	.byte	5,15,7,0,5,2
+	.word	.L23
+	.byte	3,54,1,5,13,9
+	.half	.L445-.L23
+	.byte	1,5,15,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,13,9
+	.half	.L447-.L446
+	.byte	1,5,15,9
+	.half	.L448-.L447
+	.byte	3,1,1,5,13,9
+	.half	.L449-.L448
+	.byte	1,5,15,9
+	.half	.L450-.L449
+	.byte	3,1,1,5,13,9
+	.half	.L451-.L450
+	.byte	1,5,1,9
+	.half	.L452-.L451
+	.byte	3,1,1,7,9
+	.half	.L46-.L452
+	.byte	0,1,1
+.L442:
+	.sdecl	'.debug_ranges',debug,cluster('AHRS_init')
+	.sect	'.debug_ranges'
+.L45:
+	.word	-1,.L23,0,.L46-.L23,0,0
+	.sdecl	'.debug_info',debug,cluster('AHRS_update')
+	.sect	'.debug_info'
+.L47:
+	.word	290
+	.half	3
+	.word	.L48
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L50,.L49
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'AHRS_update',0,1,61,6,1,1,1
+	.word	.L25,.L111,.L24
+	.byte	4
+	.byte	'quat',0,1,61,24
+	.word	.L107,.L112
+	.byte	4
+	.byte	'time',0,1,61,39
+	.word	.L113,.L114
+	.byte	4
+	.byte	'gyro',0,1,61,51
+	.word	.L107,.L115
+	.byte	4
+	.byte	'accel',0,1,61,66
+	.word	.L107,.L116
+	.byte	4
+	.byte	'mag',0,1,61,82
+	.word	.L107,.L117
+	.byte	5
+	.word	.L25,.L111
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('AHRS_update')
+	.sect	'.debug_abbrev'
+.L48:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('AHRS_update')
+	.sect	'.debug_line'
+.L49:
+	.word	.L454-.L453
+.L453:
+	.half	3
+	.word	.L456-.L455
+.L455:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L456:
+	.byte	5,6,7,0,5,2
+	.word	.L25
+	.byte	3,60,1,5,9,9
+	.half	.L219-.L25
+	.byte	3,2,1,5,8,9
+	.half	.L457-.L219
+	.byte	1,5,9,9
+	.half	.L458-.L457
+	.byte	3,1,1,5,8,9
+	.half	.L459-.L458
+	.byte	1,5,9,9
+	.half	.L460-.L459
+	.byte	3,1,1,5,8,9
+	.half	.L461-.L460
+	.byte	1,5,70,9
+	.half	.L462-.L461
+	.byte	3,1,1,5,80,9
+	.half	.L463-.L462
+	.byte	1,5,88,9
+	.half	.L464-.L463
+	.byte	1,5,96,9
+	.half	.L465-.L464
+	.byte	1,5,104,9
+	.half	.L466-.L465
+	.byte	1,5,32,9
+	.half	.L467-.L466
+	.byte	1,5,41,9
+	.half	.L221-.L467
+	.byte	1,5,50,9
+	.half	.L468-.L221
+	.byte	1,5,60,9
+	.half	.L469-.L468
+	.byte	1,5,1,9
+	.half	.L220-.L469
+	.byte	3,2,1,7,9
+	.half	.L51-.L220
+	.byte	0,1,1
+.L454:
+	.sdecl	'.debug_ranges',debug,cluster('AHRS_update')
+	.sect	'.debug_ranges'
+.L50:
+	.word	-1,.L25,0,.L51-.L25,0,0
+	.sdecl	'.debug_info',debug,cluster('get_angle')
+	.sect	'.debug_info'
+.L52:
+	.word	268
+	.half	3
+	.word	.L53
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L55,.L54
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'get_angle',0,1,71,6,1,1,1
+	.word	.L27,.L118,.L26
+	.byte	4
+	.byte	'q',0,1,71,22
+	.word	.L107,.L119
+	.byte	4
+	.byte	'yaw',0,1,71,35
+	.word	.L107,.L120
+	.byte	4
+	.byte	'pitch',0,1,71,47
+	.word	.L107,.L121
+	.byte	4
+	.byte	'roll',0,1,71,61
+	.word	.L107,.L122
+	.byte	5
+	.word	.L27,.L118
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_angle')
+	.sect	'.debug_abbrev'
+.L53:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_angle')
+	.sect	'.debug_line'
+.L54:
+	.word	.L471-.L470
+.L470:
+	.half	3
+	.word	.L473-.L472
+.L472:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L473:
+	.byte	5,6,7,0,5,2
+	.word	.L27
+	.byte	3,198,0,1,5,27,9
+	.half	.L226-.L27
+	.byte	3,7,1,5,32,9
+	.half	.L474-.L226
+	.byte	1,5,37,9
+	.half	.L475-.L474
+	.byte	1,5,42,9
+	.half	.L476-.L475
+	.byte	1,5,40,9
+	.half	.L477-.L476
+	.byte	1,5,35,9
+	.half	.L478-.L477
+	.byte	1,5,20,9
+	.half	.L479-.L478
+	.byte	1,5,24,9
+	.half	.L480-.L479
+	.byte	1,5,50,9
+	.half	.L481-.L480
+	.byte	1,5,55,9
+	.half	.L482-.L481
+	.byte	1,5,60,9
+	.half	.L483-.L482
+	.byte	1,5,65,9
+	.half	.L484-.L483
+	.byte	1,5,63,9
+	.half	.L485-.L484
+	.byte	1,5,58,9
+	.half	.L486-.L485
+	.byte	1,5,70,9
+	.half	.L487-.L486
+	.byte	1,5,75,9
+	.half	.L488-.L487
+	.byte	1,5,68,9
+	.half	.L489-.L488
+	.byte	1,5,80,9
+	.half	.L490-.L489
+	.byte	1,5,85,9
+	.half	.L491-.L490
+	.byte	1,5,78,9
+	.half	.L492-.L491
+	.byte	1,5,12,9
+	.half	.L222-.L492
+	.byte	1,5,24,9
+	.half	.L493-.L222
+	.byte	3,2,1,5,29,9
+	.half	.L494-.L493
+	.byte	1,5,34,9
+	.half	.L495-.L494
+	.byte	1,5,39,9
+	.half	.L496-.L495
+	.byte	1,5,37,9
+	.half	.L497-.L496
+	.byte	1,5,32,9
+	.half	.L498-.L497
+	.byte	1,5,17,9
+	.half	.L499-.L498
+	.byte	1,5,21,9
+	.half	.L500-.L499
+	.byte	1,5,9,9
+	.half	.L501-.L500
+	.byte	1,5,24,9
+	.half	.L502-.L501
+	.byte	3,2,1,5,29,9
+	.half	.L503-.L502
+	.byte	1,5,27,9
+	.half	.L504-.L503
+	.byte	1,5,34,9
+	.half	.L505-.L504
+	.byte	1,5,39,9
+	.half	.L506-.L505
+	.byte	1,5,32,9
+	.half	.L507-.L506
+	.byte	1,5,17,9
+	.half	.L508-.L507
+	.byte	1,5,21,9
+	.half	.L509-.L508
+	.byte	1,5,44,9
+	.half	.L510-.L509
+	.byte	1,5,53,9
+	.half	.L511-.L510
+	.byte	1,5,58,9
+	.half	.L512-.L511
+	.byte	1,5,63,9
+	.half	.L513-.L512
+	.byte	1,5,68,9
+	.half	.L514-.L513
+	.byte	1,5,66,9
+	.half	.L515-.L514
+	.byte	1,5,61,9
+	.half	.L516-.L515
+	.byte	1,5,46,9
+	.half	.L517-.L516
+	.byte	1,5,45,9
+	.half	.L518-.L517
+	.byte	1,5,8,9
+	.half	.L519-.L518
+	.byte	1,5,1,9
+	.half	.L520-.L519
+	.byte	3,16,1,7,9
+	.half	.L56-.L520
+	.byte	0,1,1
+.L471:
+	.sdecl	'.debug_ranges',debug,cluster('get_angle')
+	.sect	'.debug_ranges'
+.L55:
+	.word	-1,.L27,0,.L56-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('MahonyAHRSupdate')
+	.sect	'.debug_info'
+.L57:
+	.word	840
+	.half	3
+	.word	.L58
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L60,.L59
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'MahonyAHRSupdate',0,1,124,6,1,1,1
+	.word	.L31,.L123,.L30
+	.byte	4
+	.byte	'q',0,1,124,29
+	.word	.L107,.L124
+	.byte	4
+	.byte	'gx',0,1,124,41
+	.word	.L113,.L125
+	.byte	4
+	.byte	'gy',0,1,124,51
+	.word	.L113,.L126
+	.byte	4
+	.byte	'gz',0,1,124,61
+	.word	.L113,.L127
+	.byte	4
+	.byte	'ax',0,1,124,71
+	.word	.L113,.L128
+	.byte	4
+	.byte	'ay',0,1,124,81
+	.word	.L113,.L129
+	.byte	4
+	.byte	'az',0,1,124,91
+	.word	.L113,.L130
+	.byte	4
+	.byte	'mx',0,1,124,101
+	.word	.L113,.L131
+	.byte	4
+	.byte	'my',0,1,124,111
+	.word	.L113,.L132
+	.byte	4
+	.byte	'mz',0,1,124,121
+	.word	.L113,.L133
+	.byte	5
+	.word	.L31,.L123
+	.byte	6
+	.byte	'recipNorm',0,1,125,8
+	.word	.L113,.L134
+	.byte	6
+	.byte	'q0q0',0,1,126,11
+	.word	.L113,.L135
+	.byte	6
+	.byte	'q0q1',0,1,126,17
+	.word	.L113,.L136
+	.byte	6
+	.byte	'q0q2',0,1,126,23
+	.word	.L113,.L137
+	.byte	6
+	.byte	'q0q3',0,1,126,29
+	.word	.L113,.L138
+	.byte	6
+	.byte	'q1q1',0,1,126,35
+	.word	.L113,.L139
+	.byte	6
+	.byte	'q1q2',0,1,126,41
+	.word	.L113,.L140
+	.byte	6
+	.byte	'q1q3',0,1,126,47
+	.word	.L113,.L141
+	.byte	6
+	.byte	'q2q2',0,1,126,53
+	.word	.L113,.L142
+	.byte	6
+	.byte	'q2q3',0,1,126,59
+	.word	.L113,.L143
+	.byte	6
+	.byte	'q3q3',0,1,126,65
+	.word	.L113,.L144
+	.byte	6
+	.byte	'hx',0,1,127,8
+	.word	.L113,.L145
+	.byte	6
+	.byte	'hy',0,1,127,12
+	.word	.L113,.L146
+	.byte	6
+	.byte	'bx',0,1,127,16
+	.word	.L113,.L147
+	.byte	6
+	.byte	'bz',0,1,127,20
+	.word	.L113,.L148
+	.byte	6
+	.byte	'halfvx',0,1,128,1,8
+	.word	.L113,.L149
+	.byte	6
+	.byte	'halfvy',0,1,128,1,16
+	.word	.L113,.L150
+	.byte	6
+	.byte	'halfvz',0,1,128,1,24
+	.word	.L113,.L151
+	.byte	6
+	.byte	'halfwx',0,1,128,1,32
+	.word	.L113,.L152
+	.byte	6
+	.byte	'halfwy',0,1,128,1,40
+	.word	.L113,.L153
+	.byte	6
+	.byte	'halfwz',0,1,128,1,48
+	.word	.L113,.L154
+	.byte	6
+	.byte	'halfex',0,1,129,1,8
+	.word	.L113,.L155
+	.byte	6
+	.byte	'halfey',0,1,129,1,16
+	.word	.L113,.L156
+	.byte	6
+	.byte	'halfez',0,1,129,1,24
+	.word	.L113,.L157
+	.byte	6
+	.byte	'qa',0,1,130,1,8
+	.word	.L113,.L158
+	.byte	6
+	.byte	'qb',0,1,130,1,12
+	.word	.L113,.L159
+	.byte	6
+	.byte	'qc',0,1,130,1,16
+	.word	.L113,.L160
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('MahonyAHRSupdate')
+	.sect	'.debug_abbrev'
+.L58:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('MahonyAHRSupdate')
+	.sect	'.debug_line'
+.L59:
+	.word	.L522-.L521
+.L521:
+	.half	3
+	.word	.L524-.L523
+.L523:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L524:
+	.byte	5,6,7,0,5,2
+	.word	.L31
+	.byte	3,251,0,1,5,9,9
+	.half	.L248-.L31
+	.byte	3,9,1,5,5,9
+	.half	.L525-.L248
+	.byte	1,5,25,7,9
+	.half	.L526-.L525
+	.byte	1,5,41,9
+	.half	.L527-.L526
+	.byte	1,5,42,9
+	.half	.L528-.L527
+	.byte	3,1,1,5,46,9
+	.half	.L529-.L528
+	.byte	1,5,38,9
+	.half	.L530-.L529
+	.byte	1,5,3,9
+	.half	.L233-.L530
+	.byte	3,1,1,5,11,9
+	.half	.L2-.L233
+	.byte	3,4,1,5,7,9
+	.half	.L531-.L2
+	.byte	1,5,27,7,9
+	.half	.L532-.L531
+	.byte	1,5,43,9
+	.half	.L533-.L532
+	.byte	1,5,36,9
+	.half	.L6-.L533
+	.byte	3,3,1,5,31,9
+	.half	.L534-.L6
+	.byte	1,5,41,9
+	.half	.L535-.L534
+	.byte	1,5,6,9
+	.half	.L250-.L535
+	.byte	3,1,1,9
+	.half	.L253-.L250
+	.byte	3,1,1,9
+	.half	.L536-.L253
+	.byte	3,1,1,5,36,9
+	.half	.L537-.L536
+	.byte	3,3,1,5,31,9
+	.half	.L254-.L537
+	.byte	1,5,41,9
+	.half	.L538-.L254
+	.byte	1,5,6,9
+	.half	.L539-.L538
+	.byte	3,1,1,9
+	.half	.L540-.L539
+	.byte	3,1,1,9
+	.half	.L541-.L540
+	.byte	3,1,1,5,17,9
+	.half	.L542-.L541
+	.byte	3,3,1,5,24,9
+	.half	.L255-.L542
+	.byte	1,5,21,9
+	.half	.L543-.L255
+	.byte	1,5,17,9
+	.half	.L258-.L543
+	.byte	3,1,1,5,24,9
+	.half	.L544-.L258
+	.byte	1,5,21,9
+	.half	.L257-.L544
+	.byte	1,5,17,9
+	.half	.L259-.L257
+	.byte	3,1,1,5,24,9
+	.half	.L545-.L259
+	.byte	1,5,21,9
+	.half	.L546-.L545
+	.byte	1,5,17,9
+	.half	.L261-.L546
+	.byte	3,1,1,5,24,9
+	.half	.L547-.L261
+	.byte	1,5,21,9
+	.half	.L548-.L547
+	.byte	1,5,17,9
+	.half	.L262-.L548
+	.byte	3,1,1,5,24,9
+	.half	.L549-.L262
+	.byte	1,5,21,9
+	.half	.L550-.L549
+	.byte	1,5,17,9
+	.half	.L265-.L550
+	.byte	3,1,1,5,24,9
+	.half	.L264-.L265
+	.byte	1,5,21,9
+	.half	.L551-.L264
+	.byte	1,5,17,9
+	.half	.L266-.L551
+	.byte	3,1,1,5,24,9
+	.half	.L552-.L266
+	.byte	1,5,21,9
+	.half	.L553-.L552
+	.byte	1,5,17,9
+	.half	.L267-.L553
+	.byte	3,1,1,5,24,9
+	.half	.L554-.L267
+	.byte	1,5,21,9
+	.half	.L555-.L554
+	.byte	1,5,17,9
+	.half	.L268-.L555
+	.byte	3,1,1,5,24,9
+	.half	.L556-.L268
+	.byte	1,5,21,9
+	.half	.L557-.L556
+	.byte	1,5,17,9
+	.half	.L269-.L557
+	.byte	3,1,1,5,24,9
+	.half	.L558-.L269
+	.byte	1,5,21,9
+	.half	.L559-.L558
+	.byte	1,5,82,9
+	.half	.L272-.L559
+	.byte	3,3,1,5,28,9
+	.half	.L252-.L272
+	.byte	1,5,33,9
+	.half	.L271-.L252
+	.byte	1,5,40,9
+	.half	.L560-.L271
+	.byte	1,5,61,9
+	.half	.L561-.L560
+	.byte	1,5,53,9
+	.half	.L562-.L561
+	.byte	1,5,48,9
+	.half	.L563-.L562
+	.byte	1,5,69,9
+	.half	.L564-.L563
+	.byte	1,5,14,9
+	.half	.L277-.L564
+	.byte	1,5,19,9
+	.half	.L565-.L277
+	.byte	1,5,82,9
+	.half	.L278-.L565
+	.byte	3,1,1,5,33,9
+	.half	.L566-.L278
+	.byte	1,5,49,9
+	.half	.L567-.L566
+	.byte	1,5,54,9
+	.half	.L568-.L567
+	.byte	1,5,61,9
+	.half	.L281-.L568
+	.byte	1,5,46,9
+	.half	.L569-.L281
+	.byte	1,5,41,9
+	.half	.L570-.L569
+	.byte	1,5,69,9
+	.half	.L571-.L570
+	.byte	1,5,14,9
+	.half	.L286-.L571
+	.byte	1,5,19,9
+	.half	.L572-.L286
+	.byte	1,5,32,9
+	.half	.L287-.L572
+	.byte	3,1,1,5,27,9
+	.half	.L288-.L287
+	.byte	1,5,12,9
+	.half	.L279-.L288
+	.byte	1,5,70,9
+	.half	.L290-.L279
+	.byte	3,1,1,5,75,9
+	.half	.L573-.L290
+	.byte	1,5,82,9
+	.half	.L574-.L573
+	.byte	1,5,33,9
+	.half	.L293-.L574
+	.byte	1,5,54,9
+	.half	.L575-.L293
+	.byte	1,5,46,9
+	.half	.L289-.L575
+	.byte	1,5,41,9
+	.half	.L576-.L289
+	.byte	1,5,62,9
+	.half	.L577-.L576
+	.byte	1,5,14,9
+	.half	.L297-.L577
+	.byte	1,5,19,9
+	.half	.L578-.L297
+	.byte	1,5,17,9
+	.half	.L298-.L578
+	.byte	3,3,1,9
+	.half	.L300-.L298
+	.byte	3,1,1,5,19,9
+	.half	.L302-.L300
+	.byte	3,1,1,5,17,9
+	.half	.L579-.L302
+	.byte	1,5,24,9
+	.half	.L580-.L579
+	.byte	1,9
+	.half	.L306-.L580
+	.byte	3,1,1,5,29,9
+	.half	.L305-.L306
+	.byte	1,5,36,9
+	.half	.L581-.L305
+	.byte	1,5,57,9
+	.half	.L308-.L581
+	.byte	1,5,49,9
+	.half	.L582-.L308
+	.byte	1,5,44,9
+	.half	.L583-.L582
+	.byte	1,5,29,9
+	.half	.L309-.L583
+	.byte	3,1,1,5,50,9
+	.half	.L584-.L309
+	.byte	1,5,42,9
+	.half	.L585-.L584
+	.byte	1,5,37,9
+	.half	.L586-.L585
+	.byte	1,5,29,9
+	.half	.L260-.L586
+	.byte	3,1,1,5,45,9
+	.half	.L587-.L260
+	.byte	1,5,50,9
+	.half	.L588-.L587
+	.byte	1,5,57,9
+	.half	.L589-.L588
+	.byte	1,5,42,9
+	.half	.L590-.L589
+	.byte	1,5,37,9
+	.half	.L591-.L590
+	.byte	1,5,16,9
+	.half	.L291-.L591
+	.byte	3,3,1,5,25,9
+	.half	.L592-.L291
+	.byte	1,5,46,9
+	.half	.L593-.L592
+	.byte	1,5,55,9
+	.half	.L299-.L593
+	.byte	1,5,40,9
+	.half	.L317-.L299
+	.byte	1,5,16,9
+	.half	.L311-.L317
+	.byte	3,1,1,5,25,9
+	.half	.L594-.L311
+	.byte	1,5,46,9
+	.half	.L595-.L594
+	.byte	1,5,55,9
+	.half	.L596-.L595
+	.byte	1,5,40,9
+	.half	.L322-.L596
+	.byte	1,5,16,9
+	.half	.L312-.L322
+	.byte	3,1,1,5,25,9
+	.half	.L324-.L312
+	.byte	1,5,46,9
+	.half	.L326-.L324
+	.byte	1,5,55,9
+	.half	.L597-.L326
+	.byte	1,5,40,9
+	.half	.L329-.L597
+	.byte	1,5,6,9
+	.half	.L301-.L329
+	.byte	3,3,1,5,14,9
+	.half	.L598-.L301
+	.byte	1,5,3,9
+	.half	.L599-.L598
+	.byte	1,5,4,9
+	.half	.L600-.L599
+	.byte	3,9,1,5,18,9
+	.half	.L601-.L600
+	.byte	1,5,16,9
+	.half	.L602-.L601
+	.byte	1,5,4,9
+	.half	.L603-.L602
+	.byte	3,1,1,5,18,9
+	.half	.L604-.L603
+	.byte	1,5,16,9
+	.half	.L605-.L604
+	.byte	1,5,4,9
+	.half	.L606-.L605
+	.byte	3,1,1,5,18,9
+	.half	.L607-.L606
+	.byte	1,5,16,9
+	.half	.L608-.L607
+	.byte	1,5,55,9
+	.half	.L609-.L608
+	.byte	3,118,1,5,4,9
+	.half	.L9-.L609
+	.byte	1,5,19,9
+	.half	.L610-.L9
+	.byte	1,5,25,9
+	.half	.L611-.L610
+	.byte	1,5,42,9
+	.half	.L612-.L611
+	.byte	1,5,4,9
+	.half	.L613-.L612
+	.byte	1,5,16,9
+	.half	.L614-.L613
+	.byte	1,5,4,9
+	.half	.L615-.L614
+	.byte	3,1,1,5,19,9
+	.half	.L616-.L615
+	.byte	1,5,25,9
+	.half	.L617-.L616
+	.byte	1,5,42,9
+	.half	.L618-.L617
+	.byte	1,5,4,9
+	.half	.L619-.L618
+	.byte	1,5,16,9
+	.half	.L620-.L619
+	.byte	1,5,4,9
+	.half	.L621-.L620
+	.byte	3,1,1,5,19,9
+	.half	.L622-.L621
+	.byte	1,5,25,9
+	.half	.L623-.L622
+	.byte	1,5,42,9
+	.half	.L624-.L623
+	.byte	1,5,4,9
+	.half	.L625-.L624
+	.byte	1,5,16,9
+	.half	.L626-.L625
+	.byte	1,5,10,9
+	.half	.L627-.L626
+	.byte	3,1,1,5,7,9
+	.half	.L628-.L627
+	.byte	1,5,10,9
+	.half	.L629-.L628
+	.byte	3,1,1,5,7,9
+	.half	.L630-.L629
+	.byte	1,5,10,9
+	.half	.L631-.L630
+	.byte	3,1,1,5,7,9
+	.half	.L632-.L631
+	.byte	1,5,9,9
+	.half	.L10-.L632
+	.byte	3,9,1,5,6,9
+	.half	.L633-.L10
+	.byte	1,5,9,9
+	.half	.L634-.L633
+	.byte	3,1,1,5,6,9
+	.half	.L635-.L634
+	.byte	1,5,9,9
+	.half	.L636-.L635
+	.byte	3,1,1,5,6,9
+	.half	.L637-.L636
+	.byte	1,5,14,9
+	.half	.L8-.L637
+	.byte	3,4,1,5,5,9
+	.half	.L638-.L8
+	.byte	1,5,14,9
+	.half	.L337-.L638
+	.byte	3,1,1,5,5,9
+	.half	.L639-.L337
+	.byte	1,5,14,9
+	.half	.L340-.L639
+	.byte	3,1,1,5,5,9
+	.half	.L640-.L340
+	.byte	1,5,8,9
+	.half	.L343-.L640
+	.byte	3,1,1,9
+	.half	.L345-.L343
+	.byte	3,1,1,9
+	.half	.L347-.L345
+	.byte	3,1,1,5,3,9
+	.half	.L349-.L347
+	.byte	3,1,1,5,11,9
+	.half	.L641-.L349
+	.byte	1,5,15,9
+	.half	.L642-.L641
+	.byte	1,5,20,9
+	.half	.L643-.L642
+	.byte	1,5,33,9
+	.half	.L644-.L643
+	.byte	1,5,30,9
+	.half	.L645-.L644
+	.byte	1,5,7,9
+	.half	.L646-.L645
+	.byte	1,5,3,9
+	.half	.L647-.L646
+	.byte	3,1,1,5,24,9
+	.half	.L648-.L647
+	.byte	1,5,19,9
+	.half	.L649-.L648
+	.byte	1,5,32,9
+	.half	.L650-.L649
+	.byte	1,5,29,9
+	.half	.L651-.L650
+	.byte	1,5,7,9
+	.half	.L652-.L651
+	.byte	1,5,3,9
+	.half	.L653-.L652
+	.byte	3,1,1,5,32,9
+	.half	.L654-.L653
+	.byte	1,5,14,9
+	.half	.L655-.L654
+	.byte	1,5,19,9
+	.half	.L656-.L655
+	.byte	1,5,29,9
+	.half	.L657-.L656
+	.byte	1,5,7,9
+	.half	.L658-.L657
+	.byte	1,5,3,9
+	.half	.L659-.L658
+	.byte	3,1,1,5,24,9
+	.half	.L660-.L659
+	.byte	1,5,19,9
+	.half	.L661-.L660
+	.byte	1,5,29,9
+	.half	.L662-.L661
+	.byte	1,5,7,9
+	.half	.L663-.L662
+	.byte	1,5,65,9
+	.half	.L664-.L663
+	.byte	3,3,1,5,72,9
+	.half	.L665-.L664
+	.byte	1,5,51,9
+	.half	.L666-.L665
+	.byte	1,5,58,9
+	.half	.L344-.L666
+	.byte	1,5,23,9
+	.half	.L338-.L344
+	.byte	1,5,30,9
+	.half	.L346-.L338
+	.byte	1,5,37,9
+	.half	.L341-.L346
+	.byte	1,5,44,9
+	.half	.L348-.L341
+	.byte	1,5,41,9
+	.half	.L667-.L348
+	.byte	1,5,34,9
+	.half	.L668-.L667
+	.byte	1,5,48,9
+	.half	.L669-.L668
+	.byte	1,5,62,9
+	.half	.L670-.L669
+	.byte	1,5,3,9
+	.half	.L350-.L670
+	.byte	3,1,1,5,7,9
+	.half	.L671-.L350
+	.byte	1,5,3,9
+	.half	.L672-.L671
+	.byte	3,1,1,5,7,9
+	.half	.L673-.L672
+	.byte	1,5,3,9
+	.half	.L674-.L673
+	.byte	3,1,1,5,7,9
+	.half	.L675-.L674
+	.byte	1,5,3,9
+	.half	.L676-.L675
+	.byte	3,1,1,5,7,9
+	.half	.L677-.L676
+	.byte	1,5,1,9
+	.half	.L5-.L677
+	.byte	3,1,1,7,9
+	.half	.L61-.L5
+	.byte	0,1,1
+.L522:
+	.sdecl	'.debug_ranges',debug,cluster('MahonyAHRSupdate')
+	.sect	'.debug_ranges'
+.L60:
+	.word	-1,.L31,0,.L61-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('get_angle_e')
+	.sect	'.debug_info'
+.L62:
+	.word	270
+	.half	3
+	.word	.L63
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L65,.L64
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'get_angle_e',0,1,100,6,1,1,1
+	.word	.L29,.L161,.L28
+	.byte	4
+	.byte	'q',0,1,100,24
+	.word	.L107,.L162
+	.byte	4
+	.byte	'yaw',0,1,100,37
+	.word	.L107,.L163
+	.byte	4
+	.byte	'pitch',0,1,100,49
+	.word	.L107,.L164
+	.byte	4
+	.byte	'roll',0,1,100,63
+	.word	.L107,.L165
+	.byte	5
+	.word	.L29,.L161
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_angle_e')
+	.sect	'.debug_abbrev'
+.L63:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_angle_e')
+	.sect	'.debug_line'
+.L64:
+	.word	.L679-.L678
+.L678:
+	.half	3
+	.word	.L681-.L680
+.L680:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L681:
+	.byte	5,6,7,0,5,2
+	.word	.L29
+	.byte	3,227,0,1,5,26,9
+	.half	.L231-.L29
+	.byte	3,3,1,5,31,9
+	.half	.L682-.L231
+	.byte	1,5,29,9
+	.half	.L683-.L682
+	.byte	1,5,36,9
+	.half	.L684-.L683
+	.byte	1,5,41,9
+	.half	.L685-.L684
+	.byte	1,5,34,9
+	.half	.L686-.L685
+	.byte	1,5,19,9
+	.half	.L687-.L686
+	.byte	1,5,23,9
+	.half	.L688-.L687
+	.byte	1,5,57,9
+	.half	.L689-.L688
+	.byte	1,5,55,9
+	.half	.L690-.L689
+	.byte	1,5,62,9
+	.half	.L691-.L690
+	.byte	1,5,67,9
+	.half	.L692-.L691
+	.byte	1,5,72,9
+	.half	.L693-.L692
+	.byte	1,5,70,9
+	.half	.L694-.L693
+	.byte	1,5,65,9
+	.half	.L695-.L694
+	.byte	1,5,49,9
+	.half	.L696-.L695
+	.byte	1,5,47,9
+	.half	.L697-.L696
+	.byte	1,5,48,9
+	.half	.L698-.L697
+	.byte	1,5,10,9
+	.half	.L227-.L698
+	.byte	1,5,27,9
+	.half	.L699-.L227
+	.byte	3,2,1,5,32,9
+	.half	.L700-.L699
+	.byte	1,5,37,9
+	.half	.L701-.L700
+	.byte	1,5,42,9
+	.half	.L702-.L701
+	.byte	1,5,40,9
+	.half	.L703-.L702
+	.byte	1,5,35,9
+	.half	.L704-.L703
+	.byte	1,5,20,9
+	.half	.L705-.L704
+	.byte	1,5,24,9
+	.half	.L706-.L705
+	.byte	1,5,12,9
+	.half	.L707-.L706
+	.byte	1,5,27,9
+	.half	.L708-.L707
+	.byte	3,2,1,5,32,9
+	.half	.L709-.L708
+	.byte	1,5,30,9
+	.half	.L710-.L709
+	.byte	1,5,37,9
+	.half	.L711-.L710
+	.byte	1,5,42,9
+	.half	.L712-.L711
+	.byte	1,5,35,9
+	.half	.L713-.L712
+	.byte	1,5,20,9
+	.half	.L714-.L713
+	.byte	1,5,24,9
+	.half	.L715-.L714
+	.byte	1,5,47,9
+	.half	.L716-.L715
+	.byte	1,5,56,9
+	.half	.L717-.L716
+	.byte	1,5,61,9
+	.half	.L718-.L717
+	.byte	1,5,66,9
+	.half	.L719-.L718
+	.byte	1,5,71,9
+	.half	.L720-.L719
+	.byte	1,5,69,9
+	.half	.L721-.L720
+	.byte	1,5,64,9
+	.half	.L722-.L721
+	.byte	1,5,49,9
+	.half	.L723-.L722
+	.byte	1,5,48,9
+	.half	.L724-.L723
+	.byte	1,5,11,9
+	.half	.L725-.L724
+	.byte	1,5,1,9
+	.half	.L726-.L725
+	.byte	3,10,1,7,9
+	.half	.L66-.L726
+	.byte	0,1,1
+.L679:
+	.sdecl	'.debug_ranges',debug,cluster('get_angle_e')
+	.sect	'.debug_ranges'
+.L65:
+	.word	-1,.L29,0,.L66-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('MahonyAHRSupdateIMU')
+	.sect	'.debug_info'
+.L67:
+	.word	517
+	.half	3
+	.word	.L68
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L70,.L69
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'MahonyAHRSupdateIMU',0,1,228,1,6,1,1,1
+	.word	.L33,.L166,.L32
+	.byte	4
+	.byte	'q',0,1,228,1,32
+	.word	.L107,.L167
+	.byte	4
+	.byte	'gx',0,1,228,1,44
+	.word	.L113,.L168
+	.byte	4
+	.byte	'gy',0,1,228,1,54
+	.word	.L113,.L169
+	.byte	4
+	.byte	'gz',0,1,228,1,64
+	.word	.L113,.L170
+	.byte	4
+	.byte	'ax',0,1,228,1,74
+	.word	.L113,.L171
+	.byte	4
+	.byte	'ay',0,1,228,1,84
+	.word	.L113,.L172
+	.byte	4
+	.byte	'az',0,1,228,1,94
+	.word	.L113,.L173
+	.byte	5
+	.word	.L33,.L166
+	.byte	6
+	.byte	'recipNorm',0,1,230,1,8
+	.word	.L113,.L174
+	.byte	6
+	.byte	'halfvx',0,1,231,1,8
+	.word	.L113,.L175
+	.byte	6
+	.byte	'halfvy',0,1,231,1,16
+	.word	.L113,.L176
+	.byte	6
+	.byte	'halfvz',0,1,231,1,24
+	.word	.L113,.L177
+	.byte	6
+	.byte	'halfex',0,1,232,1,8
+	.word	.L113,.L178
+	.byte	6
+	.byte	'halfey',0,1,232,1,16
+	.word	.L113,.L179
+	.byte	6
+	.byte	'halfez',0,1,232,1,24
+	.word	.L113,.L180
+	.byte	6
+	.byte	'qa',0,1,233,1,8
+	.word	.L113,.L181
+	.byte	6
+	.byte	'qb',0,1,233,1,12
+	.word	.L113,.L182
+	.byte	6
+	.byte	'qc',0,1,233,1,16
+	.word	.L113,.L183
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('MahonyAHRSupdateIMU')
+	.sect	'.debug_abbrev'
+.L68:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('MahonyAHRSupdateIMU')
+	.sect	'.debug_line'
+.L69:
+	.word	.L728-.L727
+.L727:
+	.half	3
+	.word	.L730-.L729
+.L729:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L730:
+	.byte	5,6,7,0,5,2
+	.word	.L33
+	.byte	3,227,1,1,5,11,9
+	.half	.L356-.L33
+	.byte	3,8,1,5,7,9
+	.half	.L731-.L356
+	.byte	1,5,27,7,9
+	.half	.L732-.L731
+	.byte	1,5,43,9
+	.half	.L733-.L732
+	.byte	1,5,36,9
+	.half	.L11-.L733
+	.byte	3,3,1,5,31,9
+	.half	.L359-.L11
+	.byte	1,5,41,9
+	.half	.L360-.L359
+	.byte	1,5,6,9
+	.half	.L351-.L360
+	.byte	3,1,1,9
+	.half	.L361-.L351
+	.byte	3,1,1,9
+	.half	.L355-.L361
+	.byte	3,1,1,5,13,9
+	.half	.L358-.L355
+	.byte	3,3,1,5,20,9
+	.half	.L734-.L358
+	.byte	1,5,17,9
+	.half	.L735-.L734
+	.byte	1,5,27,9
+	.half	.L736-.L735
+	.byte	1,5,34,9
+	.half	.L737-.L736
+	.byte	1,5,24,9
+	.half	.L738-.L737
+	.byte	1,5,13,9
+	.half	.L365-.L738
+	.byte	3,1,1,5,20,9
+	.half	.L739-.L365
+	.byte	1,5,27,9
+	.half	.L740-.L739
+	.byte	1,5,34,9
+	.half	.L362-.L740
+	.byte	1,5,31,9
+	.half	.L741-.L362
+	.byte	1,5,24,9
+	.half	.L742-.L741
+	.byte	1,5,34,9
+	.half	.L366-.L742
+	.byte	3,1,1,5,41,9
+	.half	.L743-.L366
+	.byte	1,5,13,9
+	.half	.L744-.L743
+	.byte	1,5,20,9
+	.half	.L745-.L744
+	.byte	1,5,17,9
+	.half	.L746-.L745
+	.byte	1,5,26,9
+	.half	.L747-.L746
+	.byte	1,5,24,9
+	.half	.L748-.L747
+	.byte	1,5,31,9
+	.half	.L749-.L748
+	.byte	1,5,16,9
+	.half	.L367-.L749
+	.byte	3,3,1,5,25,9
+	.half	.L750-.L367
+	.byte	1,5,16,9
+	.half	.L369-.L750
+	.byte	3,1,1,5,25,9
+	.half	.L751-.L369
+	.byte	1,5,16,9
+	.half	.L370-.L751
+	.byte	3,1,1,5,25,9
+	.half	.L368-.L370
+	.byte	1,5,6,9
+	.half	.L364-.L368
+	.byte	3,3,1,5,14,9
+	.half	.L752-.L364
+	.byte	1,5,3,9
+	.half	.L753-.L752
+	.byte	1,5,4,9
+	.half	.L754-.L753
+	.byte	3,9,1,5,18,9
+	.half	.L755-.L754
+	.byte	1,5,16,9
+	.half	.L756-.L755
+	.byte	1,5,4,9
+	.half	.L757-.L756
+	.byte	3,1,1,5,18,9
+	.half	.L758-.L757
+	.byte	1,5,16,9
+	.half	.L759-.L758
+	.byte	1,5,4,9
+	.half	.L760-.L759
+	.byte	3,1,1,5,18,9
+	.half	.L761-.L760
+	.byte	1,5,16,9
+	.half	.L762-.L761
+	.byte	1,5,62,9
+	.half	.L763-.L762
+	.byte	3,118,1,5,7,9
+	.half	.L14-.L763
+	.byte	1,5,26,9
+	.half	.L764-.L14
+	.byte	1,5,32,9
+	.half	.L765-.L764
+	.byte	1,5,49,9
+	.half	.L766-.L765
+	.byte	1,5,7,9
+	.half	.L767-.L766
+	.byte	1,5,23,9
+	.half	.L363-.L767
+	.byte	1,5,7,9
+	.half	.L768-.L363
+	.byte	3,1,1,5,26,9
+	.half	.L769-.L768
+	.byte	1,5,32,9
+	.half	.L770-.L769
+	.byte	1,5,49,9
+	.half	.L771-.L770
+	.byte	1,5,7,9
+	.half	.L772-.L771
+	.byte	1,5,23,9
+	.half	.L773-.L772
+	.byte	1,5,7,9
+	.half	.L774-.L773
+	.byte	3,1,1,5,26,9
+	.half	.L775-.L774
+	.byte	1,5,32,9
+	.half	.L776-.L775
+	.byte	1,5,49,9
+	.half	.L777-.L776
+	.byte	1,5,7,9
+	.half	.L778-.L777
+	.byte	1,5,23,9
+	.half	.L779-.L778
+	.byte	1,5,10,9
+	.half	.L780-.L779
+	.byte	3,1,1,5,7,9
+	.half	.L371-.L780
+	.byte	1,5,10,9
+	.half	.L781-.L371
+	.byte	3,1,1,5,7,9
+	.half	.L372-.L781
+	.byte	1,5,10,9
+	.half	.L782-.L372
+	.byte	3,1,1,5,7,9
+	.half	.L373-.L782
+	.byte	1,5,9,9
+	.half	.L15-.L373
+	.byte	3,9,1,5,6,9
+	.half	.L374-.L15
+	.byte	1,5,9,9
+	.half	.L783-.L374
+	.byte	3,1,1,5,6,9
+	.half	.L375-.L783
+	.byte	1,5,9,9
+	.half	.L784-.L375
+	.byte	3,1,1,5,6,9
+	.half	.L376-.L784
+	.byte	1,5,14,9
+	.half	.L13-.L376
+	.byte	3,4,1,5,5,9
+	.half	.L377-.L13
+	.byte	1,5,14,9
+	.half	.L378-.L377
+	.byte	3,1,1,5,5,9
+	.half	.L380-.L378
+	.byte	1,5,14,9
+	.half	.L381-.L380
+	.byte	3,1,1,5,5,9
+	.half	.L383-.L381
+	.byte	1,5,8,9
+	.half	.L384-.L383
+	.byte	3,1,1,9
+	.half	.L386-.L384
+	.byte	3,1,1,9
+	.half	.L388-.L386
+	.byte	3,1,1,5,3,9
+	.half	.L390-.L388
+	.byte	3,1,1,5,11,9
+	.half	.L785-.L390
+	.byte	1,5,15,9
+	.half	.L786-.L785
+	.byte	1,5,20,9
+	.half	.L787-.L786
+	.byte	1,5,33,9
+	.half	.L788-.L787
+	.byte	1,5,30,9
+	.half	.L789-.L788
+	.byte	1,5,7,9
+	.half	.L790-.L789
+	.byte	1,5,3,9
+	.half	.L791-.L790
+	.byte	3,1,1,5,24,9
+	.half	.L792-.L791
+	.byte	1,5,19,9
+	.half	.L793-.L792
+	.byte	1,5,32,9
+	.half	.L794-.L793
+	.byte	1,5,29,9
+	.half	.L795-.L794
+	.byte	1,5,7,9
+	.half	.L796-.L795
+	.byte	1,5,3,9
+	.half	.L797-.L796
+	.byte	3,1,1,5,32,9
+	.half	.L798-.L797
+	.byte	1,5,14,9
+	.half	.L799-.L798
+	.byte	1,5,19,9
+	.half	.L800-.L799
+	.byte	1,5,29,9
+	.half	.L801-.L800
+	.byte	1,5,7,9
+	.half	.L802-.L801
+	.byte	1,5,3,9
+	.half	.L803-.L802
+	.byte	3,1,1,5,24,9
+	.half	.L804-.L803
+	.byte	1,5,19,9
+	.half	.L805-.L804
+	.byte	1,5,29,9
+	.half	.L806-.L805
+	.byte	1,5,7,9
+	.half	.L807-.L806
+	.byte	1,5,65,9
+	.half	.L808-.L807
+	.byte	3,3,1,5,72,9
+	.half	.L809-.L808
+	.byte	1,5,51,9
+	.half	.L810-.L809
+	.byte	1,5,58,9
+	.half	.L385-.L810
+	.byte	1,5,23,9
+	.half	.L379-.L385
+	.byte	1,5,30,9
+	.half	.L387-.L379
+	.byte	1,5,37,9
+	.half	.L382-.L387
+	.byte	1,5,44,9
+	.half	.L389-.L382
+	.byte	1,5,41,9
+	.half	.L811-.L389
+	.byte	1,5,34,9
+	.half	.L812-.L811
+	.byte	1,5,48,9
+	.half	.L813-.L812
+	.byte	1,5,62,9
+	.half	.L814-.L813
+	.byte	1,5,3,9
+	.half	.L391-.L814
+	.byte	3,1,1,5,7,9
+	.half	.L815-.L391
+	.byte	1,5,3,9
+	.half	.L816-.L815
+	.byte	3,1,1,5,7,9
+	.half	.L817-.L816
+	.byte	1,5,3,9
+	.half	.L818-.L817
+	.byte	3,1,1,5,7,9
+	.half	.L819-.L818
+	.byte	1,5,3,9
+	.half	.L820-.L819
+	.byte	3,1,1,5,7,9
+	.half	.L821-.L820
+	.byte	1,5,1,9
+	.half	.L822-.L821
+	.byte	3,1,1,7,9
+	.half	.L71-.L822
+	.byte	0,1,1
+.L728:
+	.sdecl	'.debug_ranges',debug,cluster('MahonyAHRSupdateIMU')
+	.sect	'.debug_ranges'
+.L70:
+	.word	-1,.L33,0,.L71-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('invSqrt')
+	.sect	'.debug_info'
+.L72:
+	.word	271
+	.half	3
+	.word	.L73
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L75,.L74
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'invSqrt',0,1,238,2,7
+	.word	.L113
+	.byte	1,1,1
+	.word	.L37,.L184,.L36
+	.byte	4
+	.byte	'x',0,1,238,2,21
+	.word	.L113,.L185
+	.byte	5
+	.word	.L37,.L184
+	.byte	6
+	.byte	'halfx',0,1,239,2,8
+	.word	.L113,.L186
+	.byte	6
+	.byte	'y',0,1,240,2,8
+	.word	.L113,.L187
+	.byte	6
+	.byte	'i',0,1,241,2,7
+	.word	.L188,.L189
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('invSqrt')
+	.sect	'.debug_abbrev'
+.L73:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('invSqrt')
+	.sect	'.debug_line'
+.L74:
+	.word	.L824-.L823
+.L823:
+	.half	3
+	.word	.L826-.L825
+.L825:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L826:
+	.byte	5,16,7,0,5,2
+	.word	.L37
+	.byte	3,238,2,1,5,21,9
+	.half	.L827-.L37
+	.byte	1,5,6,9
+	.half	.L434-.L827
+	.byte	3,3,1,5,21,9
+	.half	.L828-.L434
+	.byte	1,5,17,9
+	.half	.L433-.L828
+	.byte	1,5,11,9
+	.half	.L829-.L433
+	.byte	3,2,1,5,25,9
+	.half	.L830-.L829
+	.byte	1,5,16,9
+	.half	.L435-.L830
+	.byte	1,5,8,9
+	.half	.L831-.L435
+	.byte	1,5,2,9
+	.half	.L436-.L831
+	.byte	3,1,1,5,1,9
+	.half	.L21-.L436
+	.byte	3,1,1,7,9
+	.half	.L76-.L21
+	.byte	0,1,1
+.L824:
+	.sdecl	'.debug_ranges',debug,cluster('invSqrt')
+	.sect	'.debug_ranges'
+.L75:
+	.word	-1,.L37,0,.L76-.L37,0,0
+	.sdecl	'.debug_info',debug,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.debug_info'
+.L77:
+	.word	521
+	.half	3
+	.word	.L78
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1
+	.word	.L80,.L79
+	.byte	2
+	.word	.L38
+	.byte	3
+	.byte	'MahonyAHRSupdateIMU_yaw',0,1,169,2,6,1,1,1
+	.word	.L35,.L190,.L34
+	.byte	4
+	.byte	'q',0,1,169,2,36
+	.word	.L107,.L191
+	.byte	4
+	.byte	'gx',0,1,169,2,48
+	.word	.L113,.L192
+	.byte	4
+	.byte	'gy',0,1,169,2,58
+	.word	.L113,.L193
+	.byte	4
+	.byte	'gz',0,1,169,2,68
+	.word	.L113,.L194
+	.byte	4
+	.byte	'ax',0,1,169,2,78
+	.word	.L113,.L195
+	.byte	4
+	.byte	'ay',0,1,169,2,88
+	.word	.L113,.L196
+	.byte	4
+	.byte	'az',0,1,169,2,98
+	.word	.L113,.L197
+	.byte	5
+	.word	.L35,.L190
+	.byte	6
+	.byte	'recipNorm',0,1,170,2,11
+	.word	.L113,.L198
+	.byte	6
+	.byte	'halfvx',0,1,171,2,11
+	.word	.L113,.L199
+	.byte	6
+	.byte	'halfvy',0,1,171,2,19
+	.word	.L113,.L200
+	.byte	6
+	.byte	'halfvz',0,1,171,2,27
+	.word	.L113,.L201
+	.byte	6
+	.byte	'halfex',0,1,172,2,11
+	.word	.L113,.L202
+	.byte	6
+	.byte	'halfey',0,1,172,2,19
+	.word	.L113,.L203
+	.byte	6
+	.byte	'halfez',0,1,172,2,27
+	.word	.L113,.L204
+	.byte	6
+	.byte	'qa',0,1,173,2,11
+	.word	.L113,.L205
+	.byte	6
+	.byte	'qb',0,1,173,2,15
+	.word	.L113,.L206
+	.byte	6
+	.byte	'qc',0,1,173,2,19
+	.word	.L113,.L207
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.debug_abbrev'
+.L78:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.debug_line'
+.L79:
+	.word	.L833-.L832
+.L832:
+	.half	3
+	.word	.L835-.L834
+.L834:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0,0,0,0,0
+.L835:
+	.byte	5,6,7,0,5,2
+	.word	.L35
+	.byte	3,168,2,1,5,14,9
+	.half	.L397-.L35
+	.byte	3,7,1,5,10,9
+	.half	.L836-.L397
+	.byte	1,5,30,7,9
+	.half	.L837-.L836
+	.byte	1,5,46,9
+	.half	.L838-.L837
+	.byte	1,5,42,9
+	.half	.L16-.L838
+	.byte	3,3,1,5,37,9
+	.half	.L400-.L16
+	.byte	1,5,47,9
+	.half	.L401-.L400
+	.byte	1,5,12,9
+	.half	.L392-.L401
+	.byte	3,1,1,9
+	.half	.L402-.L392
+	.byte	3,1,1,9
+	.half	.L396-.L402
+	.byte	3,1,1,5,19,9
+	.half	.L399-.L396
+	.byte	3,3,1,5,26,9
+	.half	.L839-.L399
+	.byte	1,5,23,9
+	.half	.L840-.L839
+	.byte	1,5,33,9
+	.half	.L841-.L840
+	.byte	1,5,40,9
+	.half	.L842-.L841
+	.byte	1,5,30,9
+	.half	.L843-.L842
+	.byte	1,5,19,9
+	.half	.L406-.L843
+	.byte	3,1,1,5,26,9
+	.half	.L844-.L406
+	.byte	1,5,33,9
+	.half	.L845-.L844
+	.byte	1,5,40,9
+	.half	.L403-.L845
+	.byte	1,5,37,9
+	.half	.L846-.L403
+	.byte	1,5,30,9
+	.half	.L847-.L846
+	.byte	1,5,40,9
+	.half	.L407-.L847
+	.byte	3,1,1,5,47,9
+	.half	.L848-.L407
+	.byte	1,5,19,9
+	.half	.L849-.L848
+	.byte	1,5,26,9
+	.half	.L850-.L849
+	.byte	1,5,23,9
+	.half	.L851-.L850
+	.byte	1,5,32,9
+	.half	.L852-.L851
+	.byte	1,5,30,9
+	.half	.L853-.L852
+	.byte	1,5,37,9
+	.half	.L854-.L853
+	.byte	1,5,22,9
+	.half	.L408-.L854
+	.byte	3,3,1,5,31,9
+	.half	.L855-.L408
+	.byte	1,5,22,9
+	.half	.L410-.L855
+	.byte	3,1,1,5,31,9
+	.half	.L856-.L410
+	.byte	1,5,22,9
+	.half	.L411-.L856
+	.byte	3,1,1,5,31,9
+	.half	.L409-.L411
+	.byte	1,5,12,9
+	.half	.L405-.L409
+	.byte	3,3,1,5,20,9
+	.half	.L857-.L405
+	.byte	1,5,9,9
+	.half	.L858-.L857
+	.byte	1,5,13,9
+	.half	.L859-.L858
+	.byte	3,9,1,5,31,9
+	.half	.L860-.L859
+	.byte	1,5,29,9
+	.half	.L861-.L860
+	.byte	1,5,13,9
+	.half	.L862-.L861
+	.byte	3,1,1,5,31,9
+	.half	.L863-.L862
+	.byte	1,5,29,9
+	.half	.L864-.L863
+	.byte	1,5,13,9
+	.half	.L865-.L864
+	.byte	3,1,1,5,31,9
+	.half	.L866-.L865
+	.byte	1,5,29,9
+	.half	.L867-.L866
+	.byte	1,5,72,9
+	.half	.L868-.L867
+	.byte	3,118,1,5,13,9
+	.half	.L19-.L868
+	.byte	1,5,32,9
+	.half	.L869-.L19
+	.byte	1,5,42,9
+	.half	.L870-.L869
+	.byte	1,5,59,9
+	.half	.L871-.L870
+	.byte	1,5,13,9
+	.half	.L872-.L871
+	.byte	1,5,29,9
+	.half	.L404-.L872
+	.byte	1,5,13,9
+	.half	.L873-.L404
+	.byte	3,1,1,5,32,9
+	.half	.L874-.L873
+	.byte	1,5,42,9
+	.half	.L875-.L874
+	.byte	1,5,59,9
+	.half	.L876-.L875
+	.byte	1,5,13,9
+	.half	.L877-.L876
+	.byte	1,5,29,9
+	.half	.L878-.L877
+	.byte	1,5,13,9
+	.half	.L879-.L878
+	.byte	3,1,1,5,32,9
+	.half	.L880-.L879
+	.byte	1,5,42,9
+	.half	.L881-.L880
+	.byte	1,5,59,9
+	.half	.L882-.L881
+	.byte	1,5,13,9
+	.half	.L883-.L882
+	.byte	1,5,29,9
+	.half	.L884-.L883
+	.byte	1,5,19,9
+	.half	.L885-.L884
+	.byte	3,1,1,5,16,9
+	.half	.L412-.L885
+	.byte	1,5,19,9
+	.half	.L886-.L412
+	.byte	3,1,1,5,16,9
+	.half	.L413-.L886
+	.byte	1,5,19,9
+	.half	.L887-.L413
+	.byte	3,1,1,5,16,9
+	.half	.L414-.L887
+	.byte	1,5,15,9
+	.half	.L20-.L414
+	.byte	3,9,1,5,12,9
+	.half	.L415-.L20
+	.byte	1,5,15,9
+	.half	.L888-.L415
+	.byte	3,1,1,5,12,9
+	.half	.L416-.L888
+	.byte	1,5,15,9
+	.half	.L889-.L416
+	.byte	3,1,1,5,12,9
+	.half	.L417-.L889
+	.byte	1,5,17,9
+	.half	.L18-.L417
+	.byte	3,4,1,5,8,9
+	.half	.L418-.L18
+	.byte	1,5,17,9
+	.half	.L419-.L418
+	.byte	3,1,1,5,8,9
+	.half	.L421-.L419
+	.byte	1,5,17,9
+	.half	.L422-.L421
+	.byte	3,1,1,5,8,9
+	.half	.L424-.L422
+	.byte	1,5,11,9
+	.half	.L425-.L424
+	.byte	3,1,1,9
+	.half	.L427-.L425
+	.byte	3,1,1,9
+	.half	.L429-.L427
+	.byte	3,1,1,5,6,9
+	.half	.L431-.L429
+	.byte	3,1,1,5,14,9
+	.half	.L890-.L431
+	.byte	1,5,18,9
+	.half	.L891-.L890
+	.byte	1,5,23,9
+	.half	.L892-.L891
+	.byte	1,5,36,9
+	.half	.L893-.L892
+	.byte	1,5,33,9
+	.half	.L894-.L893
+	.byte	1,5,10,9
+	.half	.L895-.L894
+	.byte	1,5,6,9
+	.half	.L896-.L895
+	.byte	3,1,1,5,27,9
+	.half	.L897-.L896
+	.byte	1,5,22,9
+	.half	.L898-.L897
+	.byte	1,5,35,9
+	.half	.L899-.L898
+	.byte	1,5,32,9
+	.half	.L900-.L899
+	.byte	1,5,10,9
+	.half	.L901-.L900
+	.byte	1,5,6,9
+	.half	.L902-.L901
+	.byte	3,1,1,5,35,9
+	.half	.L903-.L902
+	.byte	1,5,17,9
+	.half	.L904-.L903
+	.byte	1,5,22,9
+	.half	.L905-.L904
+	.byte	1,5,32,9
+	.half	.L906-.L905
+	.byte	1,5,10,9
+	.half	.L907-.L906
+	.byte	1,5,6,9
+	.half	.L908-.L907
+	.byte	3,1,1,5,27,9
+	.half	.L909-.L908
+	.byte	1,5,22,9
+	.half	.L910-.L909
+	.byte	1,5,32,9
+	.half	.L911-.L910
+	.byte	1,5,10,9
+	.half	.L912-.L911
+	.byte	1,5,68,9
+	.half	.L913-.L912
+	.byte	3,3,1,5,75,9
+	.half	.L914-.L913
+	.byte	1,5,54,9
+	.half	.L915-.L914
+	.byte	1,5,61,9
+	.half	.L426-.L915
+	.byte	1,5,26,9
+	.half	.L420-.L426
+	.byte	1,5,33,9
+	.half	.L428-.L420
+	.byte	1,5,40,9
+	.half	.L423-.L428
+	.byte	1,5,47,9
+	.half	.L430-.L423
+	.byte	1,5,44,9
+	.half	.L916-.L430
+	.byte	1,5,37,9
+	.half	.L917-.L916
+	.byte	1,5,51,9
+	.half	.L918-.L917
+	.byte	1,5,65,9
+	.half	.L919-.L918
+	.byte	1,5,6,9
+	.half	.L432-.L919
+	.byte	3,1,1,5,10,9
+	.half	.L920-.L432
+	.byte	1,5,6,9
+	.half	.L921-.L920
+	.byte	3,1,1,5,10,9
+	.half	.L922-.L921
+	.byte	1,5,6,9
+	.half	.L923-.L922
+	.byte	3,1,1,5,10,9
+	.half	.L924-.L923
+	.byte	1,5,6,9
+	.half	.L925-.L924
+	.byte	3,1,1,5,10,9
+	.half	.L926-.L925
+	.byte	1,5,1,9
+	.half	.L927-.L926
+	.byte	3,1,1,7,9
+	.half	.L81-.L927
+	.byte	0,1,1
+.L833:
+	.sdecl	'.debug_ranges',debug,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.debug_ranges'
+.L80:
+	.word	-1,.L35,0,.L81-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('IMUData')
+	.sect	'.debug_info'
+.L82:
+	.word	179
+	.half	3
+	.word	.L83
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'IMUData',0,2,41,13
+	.word	.L208
+	.byte	1,5,3
+	.word	IMUData
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IMUData')
+	.sect	'.debug_abbrev'
+.L83:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('twoKp')
+	.sect	'.debug_info'
+.L84:
+	.word	177
+	.half	3
+	.word	.L85
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'twoKp',0,2,32,16
+	.word	.L209
+	.byte	1,5,3
+	.word	twoKp
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('twoKp')
+	.sect	'.debug_abbrev'
+.L85:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('twoKi')
+	.sect	'.debug_info'
+.L86:
+	.word	177
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'twoKi',0,2,33,16
+	.word	.L210
+	.byte	1,5,3
+	.word	twoKi
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('twoKi')
+	.sect	'.debug_abbrev'
+.L87:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('twoKp_yaw')
+	.sect	'.debug_info'
+.L88:
+	.word	181
+	.half	3
+	.word	.L89
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'twoKp_yaw',0,2,35,16
+	.word	.L211
+	.byte	1,5,3
+	.word	twoKp_yaw
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('twoKp_yaw')
+	.sect	'.debug_abbrev'
+.L89:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('twoKi_yaw')
+	.sect	'.debug_info'
+.L90:
+	.word	181
+	.half	3
+	.word	.L91
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'twoKi_yaw',0,2,36,16
+	.word	.L212
+	.byte	1,5,3
+	.word	twoKi_yaw
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('twoKi_yaw')
+	.sect	'.debug_abbrev'
+.L91:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('integralFBx')
+	.sect	'.debug_info'
+.L92:
+	.word	183
+	.half	3
+	.word	.L93
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'integralFBx',0,2,38,16
+	.word	.L213
+	.byte	1,5,3
+	.word	integralFBx
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('integralFBx')
+	.sect	'.debug_abbrev'
+.L93:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('integralFBy')
+	.sect	'.debug_info'
+.L94:
+	.word	183
+	.half	3
+	.word	.L95
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'integralFBy',0,2,38,37
+	.word	.L214
+	.byte	1,5,3
+	.word	integralFBy
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('integralFBy')
+	.sect	'.debug_abbrev'
+.L95:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('integralFBz')
+	.sect	'.debug_info'
+.L96:
+	.word	183
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'integralFBz',0,2,38,57
+	.word	.L215
+	.byte	1,5,3
+	.word	integralFBz
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('integralFBz')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('integralFBx_yaw')
+	.sect	'.debug_info'
+.L98:
+	.word	187
+	.half	3
+	.word	.L99
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'integralFBx_yaw',0,2,39,16
+	.word	.L216
+	.byte	1,5,3
+	.word	integralFBx_yaw
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('integralFBx_yaw')
+	.sect	'.debug_abbrev'
+.L99:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('integralFBy_yaw')
+	.sect	'.debug_info'
+.L100:
+	.word	187
+	.half	3
+	.word	.L101
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'integralFBy_yaw',0,2,39,41
+	.word	.L217
+	.byte	1,5,3
+	.word	integralFBy_yaw
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('integralFBy_yaw')
+	.sect	'.debug_abbrev'
+.L101:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('integralFBz_yaw')
+	.sect	'.debug_info'
+.L102:
+	.word	187
+	.half	3
+	.word	.L103
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'integralFBz_yaw',0,2,39,65
+	.word	.L218
+	.byte	1,5,3
+	.word	integralFBz_yaw
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('integralFBz_yaw')
+	.sect	'.debug_abbrev'
+.L103:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('yaw_real')
+	.sect	'.debug_info'
+.L104:
+	.word	180
+	.half	3
+	.word	.L105
+	.byte	4,1
+	.byte	'../code/JBD_IMU/MahonyAHRS.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\ADS\\26_V0.0_Bike_KModel\\Debug\\',0,12,1,2
+	.word	.L38
+	.byte	3
+	.byte	'yaw_real',0,2,43,7
+	.word	.L113
+	.byte	1,5,3
+	.word	yaw_real
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('yaw_real')
+	.sect	'.debug_abbrev'
+.L105:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('AHRS_init')
+	.sect	'.debug_loc'
+.L22:
+	.word	-1,.L23,0,.L106-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L109:
+	.word	-1,.L23,0,.L106-.L23
+	.half	1
+	.byte	101
+	.word	0,0
+.L110:
+	.word	-1,.L23,0,.L106-.L23
+	.half	1
+	.byte	102
+	.word	0,0
+.L108:
+	.word	-1,.L23,0,.L106-.L23
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('AHRS_update')
+	.sect	'.debug_loc'
+.L24:
+	.word	-1,.L25,0,.L219-.L25
+	.half	2
+	.byte	138,0
+	.word	.L219-.L25,.L111-.L25
+	.half	2
+	.byte	138,24
+	.word	.L111-.L25,.L111-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L116:
+	.word	-1,.L25,0,.L220-.L25
+	.half	1
+	.byte	102
+	.word	0,0
+.L115:
+	.word	-1,.L25,0,.L220-.L25
+	.half	1
+	.byte	101
+	.word	0,0
+.L117:
+	.word	-1,.L25,0,.L220-.L25
+	.half	1
+	.byte	103
+	.word	0,0
+.L112:
+	.word	-1,.L25,0,.L220-.L25
+	.half	1
+	.byte	100
+	.word	0,0
+.L114:
+	.word	-1,.L25,0,.L221-.L25
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('MahonyAHRSupdate')
+	.sect	'.debug_loc'
+.L30:
+	.word	-1,.L31,0,.L232-.L31
+	.half	2
+	.byte	138,0
+	.word	.L232-.L31,.L123-.L31
+	.half	2
+	.byte	138,40
+	.word	.L123-.L31,.L123-.L31
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L128:
+	.word	-1,.L31,0,.L233-.L31
+	.half	1
+	.byte	87
+	.word	.L238-.L31,.L239-.L31
+	.half	1
+	.byte	88
+	.word	.L2-.L31,.L250-.L31
+	.half	1
+	.byte	87
+	.word	.L239-.L31,.L241-.L31
+	.half	1
+	.byte	95
+	.word	.L253-.L31,.L8-.L31
+	.half	2
+	.byte	145,116
+	.word	.L319-.L31,.L320-.L31
+	.half	1
+	.byte	95
+	.word	.L323-.L31,.L324-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L129:
+	.word	-1,.L31,0,.L123-.L31
+	.half	2
+	.byte	145,0
+	.word	.L240-.L31,.L241-.L31
+	.half	1
+	.byte	89
+	.word	.L241-.L31,.L243-.L31
+	.half	1
+	.byte	95
+	.word	.L313-.L31,.L314-.L31
+	.half	1
+	.byte	95
+	.word	.L325-.L31,.L326-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L130:
+	.word	-1,.L31,0,.L123-.L31
+	.half	2
+	.byte	145,4
+	.word	.L242-.L31,.L243-.L31
+	.half	1
+	.byte	90
+	.word	.L243-.L31,.L254-.L31
+	.half	1
+	.byte	95
+	.word	.L314-.L31,.L315-.L31
+	.half	1
+	.byte	95
+	.word	.L318-.L31,.L319-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L147:
+	.word	-1,.L31,.L279-.L31,.L289-.L31
+	.half	1
+	.byte	82
+	.word	.L290-.L31,.L291-.L31
+	.half	1
+	.byte	83
+	.word	0,0
+.L148:
+	.word	-1,.L31,.L298-.L31,.L299-.L31
+	.half	1
+	.byte	81
+	.word	0,0
+.L125:
+	.word	-1,.L31,0,.L233-.L31
+	.half	1
+	.byte	84
+	.word	.L235-.L31,.L123-.L31
+	.half	2
+	.byte	145,104
+	.word	.L2-.L31,.L251-.L31
+	.half	1
+	.byte	84
+	.word	.L330-.L31,.L331-.L31
+	.half	1
+	.byte	95
+	.word	.L333-.L31,.L334-.L31
+	.half	1
+	.byte	95
+	.word	.L336-.L31,.L337-.L31
+	.half	1
+	.byte	95
+	.word	.L337-.L31,.L338-.L31
+	.half	1
+	.byte	83
+	.word	0,0
+.L126:
+	.word	-1,.L31,0,.L233-.L31
+	.half	1
+	.byte	85
+	.word	.L236-.L31,.L123-.L31
+	.half	2
+	.byte	145,108
+	.word	.L2-.L31,.L250-.L31
+	.half	1
+	.byte	85
+	.word	.L331-.L31,.L332-.L31
+	.half	1
+	.byte	95
+	.word	.L334-.L31,.L335-.L31
+	.half	1
+	.byte	95
+	.word	.L339-.L31,.L340-.L31
+	.half	1
+	.byte	95
+	.word	.L340-.L31,.L341-.L31
+	.half	1
+	.byte	85
+	.word	0,0
+.L127:
+	.word	-1,.L31,0,.L233-.L31
+	.half	1
+	.byte	86
+	.word	.L237-.L31,.L123-.L31
+	.half	2
+	.byte	145,112
+	.word	.L2-.L31,.L250-.L31
+	.half	1
+	.byte	86
+	.word	.L332-.L31,.L10-.L31
+	.half	1
+	.byte	95
+	.word	.L335-.L31,.L8-.L31
+	.half	1
+	.byte	95
+	.word	.L342-.L31,.L343-.L31
+	.half	1
+	.byte	95
+	.word	.L343-.L31,.L344-.L31
+	.half	1
+	.byte	82
+	.word	0,0
+.L155:
+	.word	-1,.L31,.L311-.L31,.L8-.L31
+	.half	1
+	.byte	87
+	.word	0,0
+.L156:
+	.word	-1,.L31,.L312-.L31,.L8-.L31
+	.half	1
+	.byte	83
+	.word	0,0
+.L157:
+	.word	-1,.L31,.L301-.L31,.L8-.L31
+	.half	1
+	.byte	82
+	.word	0,0
+.L149:
+	.word	-1,.L31,.L300-.L31,.L301-.L31
+	.half	1
+	.byte	82
+	.word	0,0
+.L150:
+	.word	-1,.L31,.L302-.L31,.L8-.L31
+	.half	1
+	.byte	84
+	.word	0,0
+.L151:
+	.word	-1,.L31,.L306-.L31,.L8-.L31
+	.half	1
+	.byte	85
+	.word	0,0
+.L152:
+	.word	-1,.L31,.L309-.L31,.L8-.L31
+	.half	1
+	.byte	86
+	.word	0,0
+.L153:
+	.word	-1,.L31,.L260-.L31,.L8-.L31
+	.half	1
+	.byte	88
+	.word	0,0
+.L154:
+	.word	-1,.L31,.L291-.L31,.L312-.L31
+	.half	1
+	.byte	83
+	.word	0,0
+.L145:
+	.word	-1,.L31,.L278-.L31,.L279-.L31
+	.half	1
+	.byte	81
+	.word	0,0
+.L146:
+	.word	-1,.L31,.L287-.L31,.L288-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L131:
+	.word	-1,.L31,0,.L123-.L31
+	.half	2
+	.byte	145,8
+	.word	.L244-.L31,.L245-.L31
+	.half	1
+	.byte	91
+	.word	.L245-.L31,.L247-.L31
+	.half	1
+	.byte	95
+	.word	.L275-.L31,.L276-.L31
+	.half	1
+	.byte	95
+	.word	.L284-.L31,.L285-.L31
+	.half	1
+	.byte	95
+	.word	.L295-.L31,.L296-.L31
+	.half	1
+	.byte	95
+	.word	.L321-.L31,.L322-.L31
+	.half	1
+	.byte	95
+	.word	.L327-.L31,.L328-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L132:
+	.word	-1,.L31,0,.L123-.L31
+	.half	2
+	.byte	145,12
+	.word	.L246-.L31,.L247-.L31
+	.half	1
+	.byte	92
+	.word	.L247-.L31,.L249-.L31
+	.half	1
+	.byte	95
+	.word	.L274-.L31,.L275-.L31
+	.half	1
+	.byte	95
+	.word	.L283-.L31,.L284-.L31
+	.half	1
+	.byte	95
+	.word	.L294-.L31,.L295-.L31
+	.half	1
+	.byte	95
+	.word	.L315-.L31,.L316-.L31
+	.half	1
+	.byte	95
+	.word	.L328-.L31,.L329-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L133:
+	.word	-1,.L31,0,.L123-.L31
+	.half	2
+	.byte	145,16
+	.word	.L248-.L31,.L249-.L31
+	.half	1
+	.byte	93
+	.word	.L249-.L31,.L255-.L31
+	.half	1
+	.byte	95
+	.word	.L276-.L31,.L277-.L31
+	.half	1
+	.byte	95
+	.word	.L285-.L31,.L286-.L31
+	.half	1
+	.byte	95
+	.word	.L296-.L31,.L297-.L31
+	.half	1
+	.byte	95
+	.word	.L316-.L31,.L317-.L31
+	.half	1
+	.byte	95
+	.word	.L320-.L31,.L321-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L124:
+	.word	-1,.L31,0,.L233-.L31
+	.half	1
+	.byte	100
+	.word	.L234-.L31,.L123-.L31
+	.half	1
+	.byte	111
+	.word	.L2-.L31,.L250-.L31
+	.half	1
+	.byte	100
+	.word	0,0
+.L135:
+	.word	-1,.L31,.L256-.L31,.L257-.L31
+	.half	1
+	.byte	95
+	.word	.L258-.L31,.L8-.L31
+	.half	2
+	.byte	145,100
+	.word	.L303-.L31,.L304-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L136:
+	.word	-1,.L31,.L259-.L31,.L260-.L31
+	.half	1
+	.byte	88
+	.word	0,0
+.L137:
+	.word	-1,.L31,.L261-.L31,.L8-.L31
+	.half	1
+	.byte	89
+	.word	0,0
+.L138:
+	.word	-1,.L31,.L262-.L31,.L8-.L31
+	.half	1
+	.byte	90
+	.word	0,0
+.L139:
+	.word	-1,.L31,.L263-.L31,.L264-.L31
+	.half	1
+	.byte	95
+	.word	.L265-.L31,.L8-.L31
+	.half	2
+	.byte	145,96
+	.word	.L280-.L31,.L281-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L292-.L31,.L293-.L31
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L310-.L31,.L311-.L31
+	.half	1
+	.byte	87
+	.word	0,0
+.L140:
+	.word	-1,.L31,.L266-.L31,.L8-.L31
+	.half	1
+	.byte	91
+	.word	0,0
+.L141:
+	.word	-1,.L31,.L267-.L31,.L8-.L31
+	.half	1
+	.byte	92
+	.word	0,0
+.L142:
+	.word	-1,.L31,.L268-.L31,.L8-.L31
+	.half	1
+	.byte	93
+	.word	0,0
+.L143:
+	.word	-1,.L31,.L269-.L31,.L8-.L31
+	.half	1
+	.byte	94
+	.word	0,0
+.L144:
+	.word	-1,.L31,.L270-.L31,.L271-.L31
+	.half	1
+	.byte	95
+	.word	.L272-.L31,.L8-.L31
+	.half	2
+	.byte	145,120
+	.word	.L273-.L31,.L274-.L31
+	.half	1
+	.byte	95
+	.word	.L282-.L31,.L283-.L31
+	.half	1
+	.byte	95
+	.word	.L304-.L31,.L305-.L31
+	.half	1
+	.byte	95
+	.word	.L307-.L31,.L308-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L158:
+	.word	-1,.L31,.L345-.L31,.L346-.L31
+	.half	1
+	.byte	84
+	.word	0,0
+.L159:
+	.word	-1,.L31,.L347-.L31,.L348-.L31
+	.half	1
+	.byte	86
+	.word	0,0
+.L160:
+	.word	-1,.L31,.L349-.L31,.L350-.L31
+	.half	1
+	.byte	87
+	.word	0,0
+.L134:
+	.word	-1,.L31,.L250-.L31,.L252-.L31
+	.half	1
+	.byte	82
+	.word	.L350-.L31,.L5-.L31
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('MahonyAHRSupdateIMU')
+	.sect	'.debug_loc'
+.L32:
+	.word	-1,.L33,0,.L166-.L33
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L171:
+	.word	-1,.L33,0,.L351-.L33
+	.half	1
+	.byte	87
+	.word	.L356-.L33,.L357-.L33
+	.half	1
+	.byte	91
+	.word	.L359-.L33,.L360-.L33
+	.half	1
+	.byte	91
+	.word	.L351-.L33,.L361-.L33
+	.half	1
+	.byte	91
+	.word	.L361-.L33,.L363-.L33
+	.half	1
+	.byte	83
+	.word	0,0
+.L172:
+	.word	-1,.L33,0,.L166-.L33
+	.half	2
+	.byte	145,0
+	.word	0,.L166-.L33
+	.half	2
+	.byte	145,0
+	.word	.L354-.L33,.L355-.L33
+	.half	1
+	.byte	92
+	.word	.L355-.L33,.L364-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+.L173:
+	.word	-1,.L33,0,.L166-.L33
+	.half	2
+	.byte	145,4
+	.word	0,.L166-.L33
+	.half	2
+	.byte	145,4
+	.word	.L356-.L33,.L358-.L33
+	.half	1
+	.byte	93
+	.word	.L358-.L33,.L13-.L33
+	.half	1
+	.byte	85
+	.word	0,0
+.L168:
+	.word	-1,.L33,0,.L352-.L33
+	.half	1
+	.byte	84
+	.word	.L371-.L33,.L15-.L33
+	.half	1
+	.byte	88
+	.word	.L374-.L33,.L13-.L33
+	.half	1
+	.byte	88
+	.word	.L377-.L33,.L378-.L33
+	.half	1
+	.byte	88
+	.word	.L378-.L33,.L379-.L33
+	.half	1
+	.byte	83
+	.word	0,0
+.L169:
+	.word	-1,.L33,0,.L351-.L33
+	.half	1
+	.byte	85
+	.word	.L372-.L33,.L15-.L33
+	.half	1
+	.byte	89
+	.word	.L375-.L33,.L13-.L33
+	.half	1
+	.byte	89
+	.word	.L380-.L33,.L381-.L33
+	.half	1
+	.byte	89
+	.word	.L381-.L33,.L382-.L33
+	.half	1
+	.byte	85
+	.word	0,0
+.L170:
+	.word	-1,.L33,0,.L351-.L33
+	.half	1
+	.byte	86
+	.word	.L373-.L33,.L15-.L33
+	.half	1
+	.byte	90
+	.word	.L376-.L33,.L13-.L33
+	.half	1
+	.byte	90
+	.word	.L383-.L33,.L384-.L33
+	.half	1
+	.byte	90
+	.word	.L384-.L33,.L385-.L33
+	.half	1
+	.byte	82
+	.word	0,0
+.L178:
+	.word	-1,.L33,.L369-.L33,.L13-.L33
+	.half	1
+	.byte	81
+	.word	0,0
+.L179:
+	.word	-1,.L33,.L370-.L33,.L13-.L33
+	.half	1
+	.byte	82
+	.word	0,0
+.L180:
+	.word	-1,.L33,.L364-.L33,.L13-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+.L175:
+	.word	-1,.L33,.L365-.L33,.L13-.L33
+	.half	1
+	.byte	86
+	.word	0,0
+.L176:
+	.word	-1,.L33,.L366-.L33,.L13-.L33
+	.half	1
+	.byte	87
+	.word	0,0
+.L177:
+	.word	-1,.L33,.L367-.L33,.L368-.L33
+	.half	1
+	.byte	95
+	.word	0,0
+.L167:
+	.word	-1,.L33,0,.L351-.L33
+	.half	1
+	.byte	100
+	.word	.L353-.L33,.L166-.L33
+	.half	1
+	.byte	111
+	.word	0,0
+.L181:
+	.word	-1,.L33,.L386-.L33,.L387-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+.L182:
+	.word	-1,.L33,.L388-.L33,.L389-.L33
+	.half	1
+	.byte	86
+	.word	0,0
+.L183:
+	.word	-1,.L33,.L390-.L33,.L391-.L33
+	.half	1
+	.byte	87
+	.word	0,0
+.L174:
+	.word	-1,.L33,.L351-.L33,.L362-.L33
+	.half	1
+	.byte	82
+	.word	.L391-.L33,.L166-.L33
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.debug_loc'
+.L34:
+	.word	-1,.L35,0,.L190-.L35
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L195:
+	.word	-1,.L35,0,.L392-.L35
+	.half	1
+	.byte	87
+	.word	.L397-.L35,.L398-.L35
+	.half	1
+	.byte	91
+	.word	.L400-.L35,.L401-.L35
+	.half	1
+	.byte	91
+	.word	.L392-.L35,.L402-.L35
+	.half	1
+	.byte	91
+	.word	.L402-.L35,.L404-.L35
+	.half	1
+	.byte	83
+	.word	0,0
+.L196:
+	.word	-1,.L35,0,.L190-.L35
+	.half	2
+	.byte	145,0
+	.word	0,.L190-.L35
+	.half	2
+	.byte	145,0
+	.word	.L395-.L35,.L396-.L35
+	.half	1
+	.byte	92
+	.word	.L396-.L35,.L405-.L35
+	.half	1
+	.byte	84
+	.word	0,0
+.L197:
+	.word	-1,.L35,0,.L190-.L35
+	.half	2
+	.byte	145,4
+	.word	0,.L190-.L35
+	.half	2
+	.byte	145,4
+	.word	.L397-.L35,.L399-.L35
+	.half	1
+	.byte	93
+	.word	.L399-.L35,.L18-.L35
+	.half	1
+	.byte	85
+	.word	0,0
+.L192:
+	.word	-1,.L35,0,.L393-.L35
+	.half	1
+	.byte	84
+	.word	.L412-.L35,.L20-.L35
+	.half	1
+	.byte	88
+	.word	.L415-.L35,.L18-.L35
+	.half	1
+	.byte	88
+	.word	.L418-.L35,.L419-.L35
+	.half	1
+	.byte	88
+	.word	.L419-.L35,.L420-.L35
+	.half	1
+	.byte	83
+	.word	0,0
+.L193:
+	.word	-1,.L35,0,.L392-.L35
+	.half	1
+	.byte	85
+	.word	.L413-.L35,.L20-.L35
+	.half	1
+	.byte	89
+	.word	.L416-.L35,.L18-.L35
+	.half	1
+	.byte	89
+	.word	.L421-.L35,.L422-.L35
+	.half	1
+	.byte	89
+	.word	.L422-.L35,.L423-.L35
+	.half	1
+	.byte	85
+	.word	0,0
+.L194:
+	.word	-1,.L35,0,.L392-.L35
+	.half	1
+	.byte	86
+	.word	.L414-.L35,.L20-.L35
+	.half	1
+	.byte	90
+	.word	.L417-.L35,.L18-.L35
+	.half	1
+	.byte	90
+	.word	.L424-.L35,.L425-.L35
+	.half	1
+	.byte	90
+	.word	.L425-.L35,.L426-.L35
+	.half	1
+	.byte	82
+	.word	0,0
+.L202:
+	.word	-1,.L35,.L410-.L35,.L18-.L35
+	.half	1
+	.byte	81
+	.word	0,0
+.L203:
+	.word	-1,.L35,.L411-.L35,.L18-.L35
+	.half	1
+	.byte	82
+	.word	0,0
+.L204:
+	.word	-1,.L35,.L405-.L35,.L18-.L35
+	.half	1
+	.byte	84
+	.word	0,0
+.L199:
+	.word	-1,.L35,.L406-.L35,.L18-.L35
+	.half	1
+	.byte	86
+	.word	0,0
+.L200:
+	.word	-1,.L35,.L407-.L35,.L18-.L35
+	.half	1
+	.byte	87
+	.word	0,0
+.L201:
+	.word	-1,.L35,.L408-.L35,.L409-.L35
+	.half	1
+	.byte	95
+	.word	0,0
+.L191:
+	.word	-1,.L35,0,.L392-.L35
+	.half	1
+	.byte	100
+	.word	.L394-.L35,.L190-.L35
+	.half	1
+	.byte	111
+	.word	0,0
+.L205:
+	.word	-1,.L35,.L427-.L35,.L428-.L35
+	.half	1
+	.byte	84
+	.word	0,0
+.L206:
+	.word	-1,.L35,.L429-.L35,.L430-.L35
+	.half	1
+	.byte	86
+	.word	0,0
+.L207:
+	.word	-1,.L35,.L431-.L35,.L432-.L35
+	.half	1
+	.byte	87
+	.word	0,0
+.L198:
+	.word	-1,.L35,.L392-.L35,.L403-.L35
+	.half	1
+	.byte	82
+	.word	.L432-.L35,.L190-.L35
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('get_angle')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L118-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L121:
+	.word	-1,.L27,0,.L222-.L27
+	.half	1
+	.byte	102
+	.word	.L225-.L27,.L118-.L27
+	.half	1
+	.byte	109
+	.word	0,0
+.L119:
+	.word	-1,.L27,0,.L222-.L27
+	.half	1
+	.byte	100
+	.word	.L223-.L27,.L118-.L27
+	.half	1
+	.byte	111
+	.word	0,0
+.L122:
+	.word	-1,.L27,0,.L222-.L27
+	.half	1
+	.byte	103
+	.word	.L226-.L27,.L118-.L27
+	.half	1
+	.byte	110
+	.word	0,0
+.L120:
+	.word	-1,.L27,0,.L222-.L27
+	.half	1
+	.byte	101
+	.word	.L224-.L27,.L118-.L27
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('get_angle_e')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L29,0,.L161-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L164:
+	.word	-1,.L29,0,.L227-.L29
+	.half	1
+	.byte	102
+	.word	.L230-.L29,.L161-.L29
+	.half	1
+	.byte	109
+	.word	0,0
+.L162:
+	.word	-1,.L29,0,.L227-.L29
+	.half	1
+	.byte	100
+	.word	.L228-.L29,.L161-.L29
+	.half	1
+	.byte	111
+	.word	0,0
+.L165:
+	.word	-1,.L29,0,.L227-.L29
+	.half	1
+	.byte	103
+	.word	.L231-.L29,.L161-.L29
+	.half	1
+	.byte	110
+	.word	0,0
+.L163:
+	.word	-1,.L29,0,.L227-.L29
+	.half	1
+	.byte	101
+	.word	.L229-.L29,.L161-.L29
+	.half	1
+	.byte	108
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('invSqrt')
+	.sect	'.debug_loc'
+.L186:
+	.word	-1,.L37,.L434-.L37,.L435-.L37
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L189:
+	.word	-1,.L37,.L433-.L37,.L184-.L37
+	.half	1
+	.byte	95
+	.word	0,0
+.L36:
+	.word	-1,.L37,0,.L184-.L37
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L185:
+	.word	-1,.L37,0,.L433-.L37
+	.half	1
+	.byte	84
+	.word	0,0
+.L187:
+	.word	-1,.L37,0,.L433-.L37
+	.half	1
+	.byte	84
+	.word	.L436-.L37,.L184-.L37
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L928:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('AHRS_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L928,.L23,.L106-.L23
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('AHRS_update')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L928,.L25,.L111-.L25
+	.byte	4
+	.word	(.L219-.L25)/2
+	.byte	19,24,22,26,3,19,138,24,4
+	.word	(.L111-.L219)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('get_angle')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L928,.L27,.L118-.L27
+	.sdecl	'.debug_frame',debug,cluster('get_angle_e')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L928,.L29,.L161-.L29
+	.sdecl	'.debug_frame',debug,cluster('MahonyAHRSupdate')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L928,.L31,.L123-.L31
+	.byte	4
+	.word	(.L232-.L31)/2
+	.byte	19,40,22,26,3,19,138,40,4
+	.word	(.L123-.L232)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('MahonyAHRSupdateIMU')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L928,.L33,.L166-.L33
+	.sdecl	'.debug_frame',debug,cluster('MahonyAHRSupdateIMU_yaw')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L928,.L35,.L190-.L35
+	.sdecl	'.debug_frame',debug,cluster('invSqrt')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L928,.L37,.L184-.L37
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	; Module end
